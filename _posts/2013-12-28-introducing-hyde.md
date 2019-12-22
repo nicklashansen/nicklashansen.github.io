@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Introducing Hyde
+title: About me
 ---
+
+I am a visiting graduate student at UC Berkeley, CA, during Spring 2020 and a graduate student at the Technical University of Denmark (DTU), graduating Jan 2021. I was previously at [raffle.ai](https://www.raffle.ai/), [Retune-DSP](https://www.retune-dsp.com/), [Nanyang Technological University](https://www.ntu.edu.sg/Pages/home.aspx) and co-taught [02456 Deep Learning](https://github.com/DeepLearningDTU/02456-deep-learning-with-PyTorch) at DTU. I am interested in Reinforcement Learning, Computer Vision, Audio, Generalization and Optimization.
 
 Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
