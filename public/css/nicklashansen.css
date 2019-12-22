@@ -23,13 +23,13 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
 }
 
 .nicklashansen-items {
-    padding-bottom: 2px;
+    padding-bottom: 1px;
 }
 
 .nicklashansen-item {
     width: 100%;
     min-height: 70px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .nicklashansen-item-img {
@@ -85,6 +85,10 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
 
 .nicklashansen-pdf {
     background-color: #4daf4a;
+}
+
+.nicklashansen-website {
+    background-color: #e41a1c;
 }
 
 .nicklashansen-underline {
