@@ -24,37 +24,42 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
 
 .nicklashansen-item {
     width: 100%;
-    min-height: 100px;
+    min-height: 70px;
+    margin-bottom: 32px;
 }
 
 .nicklashansen-item-img {
-    width: 140px;
-    height: 100px;
+    width: 100px;
+    height: 60px;
     float: left;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid #eee;
     border-radius: 4px;
+    margin-top: 5px;
     margin-right: 16px;
 }
 
 .nicklashansen-item-box {
     float: left;
+        line-height: 20px;
 }
 
 .nicklashansen-item-title {
     display: block;
     color: #313131;
+    font-size: 0.8rem;
 }
 
 .nicklashansen-item-desc {
-    font-size: 0.8;
+    font-size: 0.75rem;
 }
 
 .nicklashansen-item-links {
     display: block;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
+    line-height: 14px;
 }
 
 .nicklashansen-item-link {
