@@ -22,6 +22,10 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
     font-size: inherit;
 }
 
+.nicklashansen-items {
+    padding-bottom: 2px;
+}
+
 .nicklashansen-item {
     width: 100%;
     min-height: 70px;
@@ -30,20 +34,20 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
 
 .nicklashansen-item-img {
     width: 100px;
-    height: 60px;
+    height: 70px;
     float: left;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid #eee;
     border-radius: 4px;
-    margin-top: 5px;
     margin-right: 16px;
 }
 
 .nicklashansen-item-box {
     float: left;
-        line-height: 20px;
+    width: calc(100% - 116px);
+    line-height: 20px;
 }
 
 .nicklashansen-item-title {
@@ -53,7 +57,7 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
 }
 
 .nicklashansen-item-desc {
-    font-size: 0.75rem;
+    font-size: 0.6rem;
 }
 
 .nicklashansen-item-links {
@@ -81,4 +85,8 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
 
 .nicklashansen-pdf {
     background-color: #4daf4a;
+}
+
+.nicklashansen-underline {
+    text-decoration: underline;
 }
