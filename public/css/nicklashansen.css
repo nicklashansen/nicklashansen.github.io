@@ -12,3 +12,11 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
     background-position: center;
     background-size: contain
 }
+
+.nicklashansen-useful-links {
+    margin: 1rem;
+}
+
+.nicklashansen-useful-link-title {
+    color: #fff;
+}
