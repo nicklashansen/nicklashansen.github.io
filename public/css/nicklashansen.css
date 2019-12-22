@@ -25,7 +25,6 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
 .nicklashansen-item {
     width: 100%;
     min-height: 100px;
-    background-color: rgba(0, 0, 0, 0.025);
 }
 
 .nicklashansen-item-img {
@@ -40,6 +39,15 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
     margin-right: 16px;
 }
 
-.nicklashansen-item-desc {
+.nicklashansen-item-box {
     float: left;
+}
+
+.nicklashansen-item-title {
+    display: block;
+    color: #313131;
+}
+
+.nicklashansen-item-links {
+    display: block;
 }
