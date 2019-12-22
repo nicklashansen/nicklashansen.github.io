@@ -50,4 +50,26 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
 
 .nicklashansen-item-links {
     display: block;
+    font-size: 0.6rem;
+}
+
+.nicklashansen-item-link {
+    display: inline-block;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 6px;
+    margin-top: 6px;
+    padding: 2px 4px;
+}
+
+.nicklashansen-code {
+    background-color: orange;
+}
+
+.nicklashansen-slides {
+    background-color: #4daf4a;
+}
+
+.nicklashansen-pdf {
+    background-color: #e41a1c;
 }
