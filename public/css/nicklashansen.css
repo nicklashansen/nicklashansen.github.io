@@ -21,3 +21,25 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
 .nicklashansen-useful-link {
     font-size: inherit;
 }
+
+.nicklashansen-item {
+    width: 100%;
+    min-height: 100px;
+    background-color: rgba(0, 0, 0, 0.025);
+}
+
+.nicklashansen-item-img {
+    width: 140px;
+    height: 100px;
+    float: left;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-right: 16px;
+}
+
+.nicklashansen-item-desc {
+    float: left;
+}
