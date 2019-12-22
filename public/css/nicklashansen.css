@@ -14,9 +14,10 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
 }
 
 .nicklashansen-useful-links {
-    margin: 1rem;
+    text-align: center;
+    font-size: 0.75rem;
 }
 
-.nicklashansen-useful-link-title {
-    color: #fff;
+.nicklashansen-useful-link {
+    font-size: inherit;
 }
