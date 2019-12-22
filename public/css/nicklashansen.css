@@ -1,0 +1,14 @@
+/*
+CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
+*/
+
+.nicklashansen-sidebar-picture {
+    width: 128px;
+    height: 128px;
+    margin: 16px auto;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    background-image: url(https://avatars3.githubusercontent.com/u/38315247?s=460&v=4);
+    background-position: center;
+    background-size: contain
+}
