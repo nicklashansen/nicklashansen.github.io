@@ -48,6 +48,10 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
     color: #313131;
 }
 
+.nicklashansen-item-desc {
+    font-size: 0.8;
+}
+
 .nicklashansen-item-links {
     display: block;
     font-size: 0.6rem;
@@ -63,7 +67,7 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
 }
 
 .nicklashansen-code {
-    background-color: orange;
+    background-color: #d94801;
 }
 
 .nicklashansen-slides {
