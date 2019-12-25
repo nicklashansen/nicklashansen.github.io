@@ -96,7 +96,7 @@ h2 {
   font-size: 1.5rem;
 }
 h3 {
-  margin-top: 1.5rem;
+  margin-top: 1.75rem;
   font-size: 1.25rem;
 }
 h4, h5, h6 {
@@ -107,7 +107,7 @@ h4, h5, h6 {
 /* Body text */
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 strong {
@@ -262,7 +262,7 @@ tbody tr:nth-child(odd) th {
   font-size: 1rem;
   font-weight: 300;
   text-align: center;
-  color: #3c5ec2;
+  color: #666;
 }
 
 
