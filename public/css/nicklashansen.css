@@ -73,6 +73,7 @@ CUSTOM CSS FOR NICKLASHANSEN.GITHUB.IO
     margin-right: 6px;
     margin-top: 6px;
     padding: 2px 4px;
+    text-decoration: none !important;
 }
 
 .nicklashansen-code {

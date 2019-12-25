@@ -31,7 +31,7 @@
  * Update the foundational and global aspects of the page.
  */
 
-html {
+ html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
@@ -56,8 +56,8 @@ html {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(255,255,255,.5);
-  background-color: #1e3250;
+  color: #3c5ec2;
+  background-color: #f6f6f6;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -72,7 +72,7 @@ html {
 
 /* Sidebar links */
 .sidebar a {
-  color: #fff;
+  color: #333;
 }
 
 /* About section */
