@@ -7,8 +7,8 @@ relative_permalinks: false
 
 # Setup
 title:            'Nicklas Hansen'
-tagline:          'A Machine Learning Enthusiast'
-description:      'A Machine Learning Enthusiast'
+tagline:          'Machine Learning Researcher'
+description:      'Machine Learning Researcher'
 url:              https://nicklashansen.github.io
 baseurl:          /
 
