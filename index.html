@@ -1,12 +1,163 @@
----
-layout: default
-title: Home
----
+<head>
+    <title>Nicklas Hansen</title>
+    <meta property="og:title" content="Nicklas Hansen">
+	<meta property="og:description" content="Machine Learning Researcher. UC Berkeley, DTU, NTU.">
+    <meta property="og:image" content="https://nicklashansen.github.io/files/me.jpeg">
+	<meta property="og:url" content="https://nicklashansen.github.io/">
+	<meta name="twitter:card" content="summary_large_image">
+    <link rel="apple-touch-icon" sizes="180x180" href="files/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="files/favicon-16x16.png">
+    <link rel="manifest" href="files/site.webmanifest">
+    <style>
+body {background-color: #fdfdfd; color: #234; margin: 0;}
+h1 {margin-bottom: 32px; font-size: 2.2em; }
+h2 {margin-top: 48px;}
+h1, h2, h3, h4, h5 {color: #345;}
+h1, h2, h3, h4, h5, a, p, span, body {font-weight: normal; font-family: sans-serif;}
+.header {background-color: #f4f4f8; width: 100%; padding-top: 48px; padding-bottom: 32px;}
+.header-profile-picture, .header-text {display: inline-block;}
+.header-name h1 {margin: 0;}
+.header-subtitle {margin-bottom: 12px;}
+.header-profile-picture {width: 92px; height: 92px; margin-right: 12px; border-radius: 50%; background-image: url(files/me.jpeg); background-position: center; background-size: contain;}
+.content {max-width: 900px; margin: auto; margin-top: 48px;}
+.hr {width: 100%; height: 1px; margin: 48px 0; background-color: #d6dbdf;}
+a {color: #2471a3; text-decoration: none;}
+a:hover {color: #5499c7;}
+p {line-height: 1.5em;}
+.nobreak {white-space: nowrap;}
+.noselect {-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+.bold {font-weight: bold;}
+.italic {font-style: italic;}
+.bulletpoints {line-height: 1.5em;}
+.row {box-sizing: border-box;}
+.row-media {display: block; float: left; width: 200px; height: 100px; background-position: center; background-size: contain; background-repeat: no-repeat; border-radius: 6px;}
+.row-text {display: block; float: left; margin-left: 16px; line-height: 1.5em; max-width: 682px;}
+.clearfix {content: ""; clear: both; display: table;}
+.publication {margin-bottom: 20px;}
+.press {width: 100px; height: 70px; border: 1px solid #def; margin-right: 12px; background-size: cover;}  
+    </style>
+</head>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    {{ post.content }}
-  </div>
-  {% endfor %}
+<div class="header noselect">
+    <div class="content row">
+        <div class="header-profile-picture"></div>
+        <div class="header-text">
+            <div class="header-name">
+                <h1>Nicklas Hansen</h1>
+            </div>
+            <div class="header-subtitle">
+                UC Berkeley, DTU, NTU
+            </div>
+            <div class="header-links">
+                <a href="https://twitter.com/ncklashansen">[Twitter]</a>
+                <a href="https://www.linkedin.com/in/ncklas/">[LinkedIn]</a>
+                <a href="https://github.com/nicklashansen">[GitHub]</a>
+                <a href="https://scholar.google.com/citations?user=OFtDgzwAAAAJ&hl=en">[Google Scholar]</a>
+                <a href="https://github.com/nicklashansen/me/blob/master/NicklasHansen_Resume.pdf">[CV]</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content" style="padding-bottom: 64px;">
+    <div>
+        <p>
+            I am a MS student at the <a href="https://www.dtu.dk/english">Technical University of Denmark</a> (DTU), writing my thesis under supervision of <a href="https://xiaolonw.github.io/index.html">Xiaolong Wang</a> and <a href="http://cogsys.imm.dtu.dk/staff/winther/">Ole Winther</a>. I was recently a visiting student at <a href="https://www.berkeley.edu/">UC Berkeley</a> and a research intern at <a href="https://bair.berkeley.edu/">Berkeley AI Research</a>, where I worked with <a href="https://cs.nyu.edu/~lp91/#">Lerrel Pinto</a> and <a href="https://xiaolonw.github.io/">Xiaolong Wang</a>. Before that I was at <a href="https://www.ntu.edu.sg/Pages/home.aspx">Nanyang Technological University</a> (NTU) and <a href="https://www.raffle.ai/">raffle.ai</a>.
+        </p>
+    </div>
+    <div>
+        <h2 class="noselect">Research Interests</h2>
+        <p>
+            I am highly interested in research on the <span class="bold">generalization</span> and <span class="bold">robustness</span> of machine learning systems, particularly in connection with <a href="https://nicklashansen.github.io/PAD/">Self-Supervised Learning</a>, <a href="https://arxiv.org/abs/2002.02805">Transfer Learning</a> and <a href="https://github.com/nicklashansen/neural-net-optimization">Optimization</a> in the context of <span class="bold">computer vision</span> and <span class="bold">robotics</span>.
+        </p>
+    </div>
+    <div>
+        <h2 class="noselect">News</h2>
+        <ul class="bulletpoints">
+            <li><a href="https://nicklashansen.github.io/PAD/">Self-Supervised Policy Adaptation during Deployment</a> is now available as pre-print (July 2020)</li>
+            <li>I was selected for the <a href="https://scet.berkeley.edu/collider-cup/">UC Berkeley Collider Cup</a> from a pool of hundreds of students (May 2020)</li>
+            <li>One paper is accepted in <a href="https://embc.embs.org/2020/">EMBC 2020</a></li>
+            <li>I am joining <a href="https://bair.berkeley.edu/">Berkeley AI Research</a> as a research intern (Spring 2020)</li>
+            <li>I will be a visiting student at <a href="https://www.berkeley.edu/">UC Berkeley</a> during Spring 2020</li>
+            <li>I have accepted TA positions for classes <a href="https://kurser.dtu.dk/course/02456">Deep Learning</a> and <a href="https://kurser.dtu.dk/course/2019-2020/02454">Intro to Cognitive Science</a> at DTU (Fall 2019)</li>
+            <li>I am interning at <a href="https://www.raffle.ai/">raffle.ai</a> (Summer 2019)</li>
+            <li>I gave a talk on reinforcement learning for <a href="https://www.neural-ai.dk/">Neural</a> (June 2019)</li>
+        </ul>
+    </div>
+    <div>
+        <h2 class="noselect">Publications</h2>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/SelfSupervisedPolicyAdaptation.gif);"></div>
+            <div class="row-text">
+                <span class="bold">Nicklas Hansen</span>, Yu Sun, Pieter Abbeel, Alexei A. Efros, Lerrel Pinto, Xiaolong Wang<br/>
+                <span class="italic">Self-Supervised Policy Adaptation during Deployment</span><br/>
+                arXiv, 2020<br/>
+                <a href="https://arxiv.org/abs/2007.04309">[arxiv]</a> <a href="https://nicklashansen.github.io/PAD/">[website]</a> <a href="https://github.com/nicklashansen/policy-adaptation-during-deployment">[code]</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/ShortTermBloodGlucosePrediction.png)"></div>
+            <div class="row-text">
+                Ali Mohebbi, Alexander R. Johansen, <span class="bold">Nicklas Hansen</span>, Peter E. Christensen, Jens M. Tarp, Morten L. Jensen, Henrik Bengtsson, Morten Mørup<br/>
+                <span class="italic">Short Term Blood Glucose Prediction based on Continuous Glucose Monitoring Data</span><br/>
+                Engineering in Medicine and Biology Conference (<span class="bold">EMBC</span>), 2020<br/>
+                <a href="https://arxiv.org/abs/2002.02805">[arxiv]</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="noselect">Press coverage</h2>
+        <div class="row clearfix">
+            <a href="https://sn.dk/Koege-Onsdag/Ung-koegenser-skal-bekaempe-hvidvask-i-Californien/artikel/904070" class="press row-media" style="background-image: url(https://i.imgur.com/jCBGIFZ.png)"></a>
+            <a href="https://www.facebook.com/dtudk/posts/2710489052354301" class="press row-media" style="background-image: url(https://i.imgur.com/BQjpjtE.png)"></a>
+            <a href="https://www.sparnordfonden.dk/nyheder/2020/fem-unge-tech-talenter-skal-bekaempe-international-finanssvindel-fra-californien.aspx?fbclid=IwAR1ENAsBdO6pG0z5peur177zIbdw7R-85YXctO5sd4Eyn5lG48iouZmjwHU" class="press row-media" style="background-image: url(https://i.imgur.com/MmRaKWd.png)"></a>
+        </div>
+    </div>
+    <div>
+        <h2 class="noselect">Open-source projects</h2>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(https://raw.githubusercontent.com/nicklashansen/neural-net-optimization/master/results/loss_cifar_sgd.png);"></div>
+            <div class="row-text">
+                <span class="italic">Recent Optimization Algorithms for Deep Learning</span><br/>
+                Dec 2019<br/>
+                <a href="https://drive.google.com/file/d/1JvwnXfL-u_kuym2IVzZ_IR9TFN_u4kte/view">[slides]</a> <a href="https://github.com/nicklashansen/neural-net-optimization">[code]</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(https://i.imgur.com/sGdC9nY.png);"></div>
+            <div class="row-text">
+                <span class="italic">How to build RNNs and LSTMs from scratch with NumPy</span><br/>
+                Oct 2019<br/>
+                <a href="https://colab.research.google.com/drive/1oSkZuIicbPPzzwWyP43vaj4CmMbwNp4u">[colab]</a> <a href="https://github.com/nicklashansen/rnn_lstm_from_scratch">[code]</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(https://i.imgur.com/HQ69F0j.png);"></div>
+            <div class="row-text">
+                <span class="italic">Minimal Neural Architecture Search</span><br/>
+                Oct 2019<br/>
+                <a href="https://github.com/nicklashansen/minimal-nas">[code]</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(https://i.imgur.com/JRnnncj.png);"></div>
+            <div class="row-text">
+                <span class="italic">SyntaxSQLNet: A Text-to-SQL Parser</span><br/>
+                July 2019<br/>
+                <a href="https://github.com/raffle-interns/SyntaxSQLNet">[code]</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(https://i.imgur.com/FlPshTH.png);"></div>
+            <div class="row-text">
+                <span class="italic">Voice Activity Detection in Noisy Environments</span><br/>
+                Dec 2018<br/>
+                <a href="https://github.com/nicklashansen/voice-activity-detection/blob/master/Paper.pdf">[pdf]</a> <a href="https://github.com/nicklashansen/voice-activity-detection">[code]</a>
+            </div>
+        </div>
+    </div>
+    <div class="noselect">
+        <h2>Contact</h2>
+        I can be contacted directly at <span class="bold">hello</span> [at] <span class="bold">nicklashansen</span> .com
+    </div>
 </div>
