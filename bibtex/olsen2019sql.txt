@@ -1,0 +1,5 @@
+@misc{olsen2019sql,
+	title={SyntaxSQLNet Revised: PyTorch Reimplementation},
+	author={Jeppe J.W. Olsen, Nicklas Hansen, Peter E. Christensen},
+	year={2019}
+}

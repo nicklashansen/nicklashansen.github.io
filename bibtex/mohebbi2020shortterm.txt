@@ -1,0 +1,7 @@
+@inproceedings{mohebbi2020shortterm,
+  title={Short Term Blood Glucose Prediction based on Continuous Glucose Monitoring Data},
+  author={Ali Mohebbi and Alexander R. Johansen and Nicklas Hansen and Peter E. Christensen and Jens M. Tarp and Morten L. Jensen and Henrik Bengtsson and Morten M{\o}rup},
+  booktitle={2020 42th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
+  year={2020},
+  organization={IEEE}
+}

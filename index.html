@@ -19,11 +19,19 @@ h1, h2, h3, h4, h5, a, p, span, body {font-weight: normal; font-family: sans-ser
 .header-profile-picture, .header-text {display: inline-block;}
 .header-name h1 {margin: 0;}
 .header-subtitle {margin-bottom: 12px;}
-.header-profile-picture {width: 92px; height: 92px; margin-right: 12px; border-radius: 50%; background-image: url(files/me.jpeg); background-position: center; background-size: contain;}
+.header-profile-picture {width: 100px; height: 100px; margin-right: 12px; border-radius: 50%; background-image: url(files/me.jpeg); background-position: center; background-size: contain;}
 .content {max-width: 900px; margin: auto; margin-top: 48px;}
 .hr {width: 100%; height: 1px; margin: 48px 0; background-color: #d6dbdf;}
 a {color: #2471a3; text-decoration: none;}
 a:hover {color: #5499c7;}
+a.btn {background-color: #2471a3; color: #fff; margin-top: 4px; display: inline-block; padding: 0 4px; border-radius: 2px; line-height: 1.5em;}
+a.btn:hover {background-color: #174e74;}
+a.btn.btn-red {background-color: #d63a3a;}
+a.btn.btn-red:hover {background-color: #a02727;}
+a.btn.btn-orange {background-color: #e2700c;}
+a.btn.btn-orange:hover {background-color: #c46009;}
+a.btn.btn-dark {background-color: #345;}
+a.btn.btn-dark:hover {background-color: #234;}
 p {line-height: 1.5em;}
 .nobreak {white-space: nowrap;}
 .noselect {-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
@@ -50,11 +58,11 @@ p {line-height: 1.5em;}
                 UC Berkeley, DTU, NTUsg
             </div>
             <div class="header-links">
-                <a href="https://github.com/nicklashansen">[GitHub]</a>
-                <a href="https://twitter.com/ncklashansen">[Twitter]</a>
-                <a href="https://www.linkedin.com/in/ncklas/">[LinkedIn]</a>
-                <a href="https://scholar.google.com/citations?user=OFtDgzwAAAAJ&hl=en">[Google Scholar]</a>
-                <a href="files/resume.pdf">[CV]</a>
+                <a class="btn" href="https://github.com/nicklashansen">GitHub</a>
+                <a class="btn" href="https://twitter.com/ncklashansen">Twitter</a>
+                <a class="btn" href="https://www.linkedin.com/in/ncklas/">LinkedIn</a>
+                <a class="btn" href="https://scholar.google.com/citations?user=OFtDgzwAAAAJ&hl=en">Google Scholar</a>
+                <a class="btn" href="files/resume.pdf">CV</a>
             </div>
         </div>
     </div>
@@ -74,7 +82,7 @@ p {line-height: 1.5em;}
     <div>
         <h2 class="noselect">News</h2>
         <ul class="bulletpoints">
-            <li><a href="https://nicklashansen.github.io/PAD/">Self-Supervised Policy Adaptation during Deployment</a> is now available as pre-print (July 2020)</li>
+            <li><a href="https://arxiv.org/abs/2007.04309">Self-Supervised Policy Adaptation during Deployment</a> is now available as pre-print (July 2020)</li>
             <li>I was selected for the <a href="https://scet.berkeley.edu/collider-cup/">UC Berkeley Collider Cup</a> from a pool of hundreds of students (May 2020)</li>
             <li><a href="https://arxiv.org/abs/2002.02805">Our paper</a> has been accepted to <a href="https://embc.embs.org/2020/">EMBC 2020</a> (February 2020)</li>
             <li>I am joining <a href="https://bair.berkeley.edu/">Berkeley AI Research</a> as a research intern (Spring 2020)</li>
@@ -92,7 +100,7 @@ p {line-height: 1.5em;}
                 <span class="bold">Nicklas Hansen</span>, Yu Sun, Pieter Abbeel, Alexei A. Efros, Lerrel Pinto, Xiaolong Wang<br/>
                 <span class="italic">Self-Supervised Policy Adaptation during Deployment</span><br/>
                 arXiv, 2020<br/>
-                <a href="https://arxiv.org/abs/2007.04309">[arxiv]</a> <a href="https://nicklashansen.github.io/PAD/">[website]</a> <a href="https://github.com/nicklashansen/policy-adaptation-during-deployment">[code]</a>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2007.04309">arXiv</a> <a class="btn btn-orange" href="https://nicklashansen.github.io/PAD/">Website</a> <a class="btn" href="https://github.com/nicklashansen/policy-adaptation-during-deployment">Code</a> <a class="btn btn-dark" href="bibtex/hansen2020deployment.txt">BibTeX</a>
             </div>
         </div>
         <div class="publication row clearfix">
@@ -101,7 +109,7 @@ p {line-height: 1.5em;}
                 Ali Mohebbi, Alexander R. Johansen, <span class="bold">Nicklas Hansen</span>, Peter E. Christensen, Jens M. Tarp, Morten L. Jensen, Henrik Bengtsson, Morten Mørup<br/>
                 <span class="italic">Short Term Blood Glucose Prediction based on Continuous Glucose Monitoring Data</span><br/>
                 Engineering in Medicine and Biology Conference (<span class="bold">EMBC</span>), 2020<br/>
-                <a href="https://arxiv.org/abs/2002.02805">[arxiv]</a>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2002.02805">arXiv</a> <a class="btn btn-dark" href="bibtex/mohebbi2020shortterm.txt">BibTeX</a>
             </div>
         </div>
     </div>
@@ -118,41 +126,46 @@ p {line-height: 1.5em;}
         <div class="publication row clearfix">
             <div class="row-media" style="background-image: url(https://raw.githubusercontent.com/nicklashansen/neural-net-optimization/master/results/loss_cifar_sgd.png);"></div>
             <div class="row-text">
+                <span class="bold">Nicklas Hansen</span>*, Christoffer Riis*<br/>
                 <span class="italic">Recent Optimization Algorithms for Deep Learning</span><br/>
                 Dec 2019<br/>
-                <a href="https://drive.google.com/file/d/1JvwnXfL-u_kuym2IVzZ_IR9TFN_u4kte/view">[slides]</a> <a href="https://github.com/nicklashansen/neural-net-optimization">[code]</a>
+                <a class="btn btn-orange" href="https://drive.google.com/file/d/1JvwnXfL-u_kuym2IVzZ_IR9TFN_u4kte/view">Slides</a> <a class="btn" href="https://github.com/nicklashansen/neural-net-optimization">Code</a>
             </div>
         </div>
         <div class="publication row clearfix">
             <div class="row-media" style="background-image: url(https://i.imgur.com/sGdC9nY.png);"></div>
             <div class="row-text">
+                <span class="bold">Nicklas Hansen</span>, Peter E. Christensen, Alexander R. Johansen<br/>
                 <span class="italic">How to build RNNs and LSTMs from scratch with NumPy</span><br/>
                 Oct 2019<br/>
-                <a href="https://colab.research.google.com/drive/1oSkZuIicbPPzzwWyP43vaj4CmMbwNp4u">[colab]</a> <a href="https://github.com/nicklashansen/rnn_lstm_from_scratch">[code]</a>
+                <a class="btn btn-orange" href="https://colab.research.google.com/drive/1oSkZuIicbPPzzwWyP43vaj4CmMbwNp4u">Colab</a> <a class="btn" href="https://github.com/nicklashansen/rnn_lstm_from_scratch">Code</a>
             </div>
         </div>
         <div class="publication row clearfix">
             <div class="row-media" style="background-image: url(https://i.imgur.com/HQ69F0j.png);"></div>
             <div class="row-text">
+                <span class="bold">Nicklas Hansen</span><br/>
                 <span class="italic">Minimal Neural Architecture Search</span><br/>
                 Oct 2019<br/>
-                <a href="https://github.com/nicklashansen/minimal-nas">[code]</a>
+                <a class="btn" href="https://github.com/nicklashansen/minimal-nas">Code</a>
             </div>
         </div>
         <div class="publication row clearfix">
             <div class="row-media" style="background-image: url(https://i.imgur.com/JRnnncj.png);"></div>
             <div class="row-text">
-                <span class="italic">SyntaxSQLNet: A Text-to-SQL Parser</span><br/>
+                Jeppe J.W. Olsen*, <span class="bold">Nicklas Hansen</span>*, Peter E. Christensen*<br/>
+                <span class="italic">SyntaxSQLNet: A Text-to-SQL Parser (Reimplementation)</span><br/>
                 July 2019<br/>
-                <a href="https://github.com/raffle-interns/SyntaxSQLNet">[code]</a>
+                <a class="btn" href="https://github.com/raffle-interns/SyntaxSQLNet">Code</a> <a class="btn btn-dark" href="bibtex/olsen2019sql.txt">BibTeX</a>
             </div>
         </div>
         <div class="publication row clearfix">
             <div class="row-media" style="background-image: url(https://i.imgur.com/FlPshTH.png);"></div>
             <div class="row-text">
+                <span class="bold">Nicklas Hansen</span>*, Simon H. Albrechtsen*<br/>
                 <span class="italic">Voice Activity Detection in Noisy Environments</span><br/>
                 Dec 2018<br/>
-                <a href="https://github.com/nicklashansen/voice-activity-detection/blob/master/Paper.pdf">[pdf]</a> <a href="https://github.com/nicklashansen/voice-activity-detection">[code]</a>
+                <a class="btn btn-red" href="https://github.com/nicklashansen/voice-activity-detection/blob/master/Paper.pdf">PDF</a> <a class="btn" href="https://github.com/nicklashansen/voice-activity-detection">Code</a> <a class="btn btn-dark" href="bibtex/hansen2018vad.txt">BibTeX</a>
             </div>
         </div>
     </div>

@@ -1,0 +1,5 @@
+@misc{hansen2018vad,
+	title={Voice Activity Detection in Noisy Environments},
+	author={Nicklas Hansen and Simon H. Albrechtsen},
+	year={2018}
+}
