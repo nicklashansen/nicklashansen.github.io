@@ -11,7 +11,7 @@
     <link rel="manifest" href="files/site.webmanifest">
     <style>
 html {-webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-body {background-color: #fdfdfd; color: #234; margin: 0; font-size: 14px;}
+body {background-color: #fdfdfd; color: #234; margin: 0; font-size: 13px;}
 h1 {margin-bottom: 32px; font-size: 2.6em;}
 h2 {margin-top: 48px;}
 h1, h2, h3, h4, h5 {color: #345;}
@@ -21,11 +21,11 @@ h1, h2, h3, h4, h5, a, p, span, body, div {font-weight: normal; font-family: san
 .header-name h1 {margin: 0;}
 .header-subtitle {margin-bottom: 12px;}
 .header-profile-picture {width: 100px; height: 100px; margin-right: 12px; border-radius: 50%; background-image: url(files/me.jpeg); background-position: center; background-size: contain;}
-.content {max-width: 868px; padding-left: 16px; padding-right: 16px; margin: auto; margin-top: 48px;}
+.content {max-width: 728px; padding-left: 16px; padding-right: 16px; margin: auto; margin-top: 48px;}
 .hr {width: 100%; height: 1px; margin: 48px 0; background-color: #d6dbdf;}
 a {color: #2471a3; text-decoration: none;}
 a:hover {color: #5499c7;}
-a.btn {background-color: #2471a3; color: #fff; font-size: 12px; margin-top: 4px; display: inline-block; padding: 0 4px; border-radius: 2px; line-height: 1.5em;}
+a.btn {background-color: #2471a3; color: #fff; font-size: 11px; margin-top: 4px; display: inline-block; padding: 0 4px; border-radius: 2px; line-height: 1.5em;}
 a.btn:hover {background-color: #174e74;}
 a.btn.btn-red {background-color: #d63a3a;}
 a.btn.btn-red:hover {background-color: #a02727;}
@@ -43,14 +43,14 @@ p {line-height: 1.5em;}
 .bulletpoints {line-height: 1.5em;}
 .row {box-sizing: border-box;}
 .row-media {display: block; float: left; width: 180px; height: 90px; background-position: center; background-size: contain; background-repeat: no-repeat; border-radius: 6px;}
-.row-text {display: block; float: left; margin-left: 16px; line-height: 1.5em; max-width: 662px;}
+.row-text {display: block; float: left; margin-left: 16px; line-height: 1.5em; max-width: 522px;}
 .row-text span {line-height: inherit;}
 .clearfix {content: ""; clear: both; display: table;}
 .publication {margin-bottom: 32px;}
 .press {width: 100px; height: 80px; border: 1px solid #def; margin-right: 12px; background-size: cover;}  
 .img-contain {background-size: contain !important;}
 .footer {background-color: #345; width: 100%}
-.footer-content {color: #fff; font-size: 10px; padding: 6px 0; max-width: 900px; margin: auto;}
+.footer-content {color: #fff; font-size: 10px; padding: 6px 0; max-width: 800px; margin: auto;}
 
 @media only screen and (max-width: 1150px) {
     .header-profile-picture, .header-text {display: block; margin: auto; text-align: center;}
@@ -177,7 +177,17 @@ p {line-height: 1.5em;}
         </div>
     </div>
     <div>
-        <h2 class="noselect">Open-source projects</h2>
+        <h2 class="noselect">Selected open-source projects</h2>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/dmcontrol-gb.png);"></div>
+            <div class="row-text">
+                <span class="bold">Nicklas Hansen</span>, Xiaolong Wang<br/>
+                <span class="italic">DMControl Generalization Benchmark</span><br/>
+                November 2020<br/>
+                (links will be announced shortly)<br/>
+                <!-- <a class="btn" href="https://github.com/nicklashansen/dmcontrol-generalization-benchmark">Code</a> -->
+            </div>
+        </div>
         <div class="publication row clearfix">
             <div class="row-media" style="background-image: url(https://raw.githubusercontent.com/nicklashansen/neural-net-optimization/master/results/loss_cifar_sgd.png);"></div>
             <div class="row-text">
@@ -196,7 +206,7 @@ p {line-height: 1.5em;}
                 <a class="btn btn-orange" href="https://colab.research.google.com/drive/1oSkZuIicbPPzzwWyP43vaj4CmMbwNp4u">Colab</a> <a class="btn" href="https://github.com/nicklashansen/rnn_lstm_from_scratch">Code</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <!-- <div class="publication row clearfix">
             <div class="row-media" style="background-image: url(https://i.imgur.com/HQ69F0j.png);"></div>
             <div class="row-text">
                 <span class="bold">Nicklas Hansen</span><br/>
@@ -204,7 +214,7 @@ p {line-height: 1.5em;}
                 October 2019<br/>
                 <a class="btn" href="https://github.com/nicklashansen/minimal-nas">Code</a>
             </div>
-        </div>
+        </div> -->
         <div class="publication row clearfix">
             <div class="row-media" style="background-image: url(https://i.imgur.com/JRnnncj.png);"></div>
             <div class="row-text">
@@ -214,7 +224,7 @@ p {line-height: 1.5em;}
                 <a class="btn" href="https://github.com/raffle-interns/SyntaxSQLNet">Code</a> <a class="btn btn-dark" href="bibtex/olsen2019sql.txt">BibTeX</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <!-- <div class="publication row clearfix">
             <div class="row-media" style="background-image: url(https://i.imgur.com/FlPshTH.png);"></div>
             <div class="row-text">
                 <span class="bold">Nicklas Hansen</span>*, Simon H. Albrechtsen*<br/>
@@ -222,11 +232,11 @@ p {line-height: 1.5em;}
                 December 2018<br/>
                 <a class="btn btn-red" href="https://github.com/nicklashansen/voice-activity-detection/blob/master/Paper.pdf">PDF</a> <a class="btn" href="https://github.com/nicklashansen/voice-activity-detection">Code</a> <a class="btn btn-dark" href="bibtex/hansen2018vad.txt">BibTeX</a>
             </div>
-        </div>
+        </div> -->
     </div>
     <div>
         <h2 class="noselect">Press coverage</h2>
-        I have been mentioned in various media in connection with my research and my stay at UC Berkeley. Here's a few select articles:
+        I have been mentioned in various media in connection with my research and my stay at UC Berkeley. Here's a few selected articles:
         <div class="row clearfix" style="margin-top: 16px;">
             <a href="https://blog.deeplearning.ai/blog/the-batch-predicting-car-crashes-profiting-from-deepfakes-piloting-drone-swarms-grading-data" class="press row-media" style="background-image: url(https://i.imgur.com/eoASzgo.png)"></a>
             <a href="https://sn.dk/Koege-Onsdag/Ung-koegenser-skal-bekaempe-hvidvask-i-Californien/artikel/904070" class="press row-media" style="background-image: url(https://i.imgur.com/jCBGIFZ.png)"></a>
