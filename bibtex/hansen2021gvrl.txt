@@ -1,0 +1,5 @@
+@misc{hansen2021gvrl,
+	title={Generalization in Visual Reinforcement Learning},
+	author={Nicklas Hansen},
+	year={2021},
+}
