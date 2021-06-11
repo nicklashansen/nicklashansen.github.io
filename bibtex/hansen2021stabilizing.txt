@@ -1,0 +1,8 @@
+@misc{hansen2021stabilizing,
+	title={Target Variance Matters: Stabilizing Deep Q-Learning under Data Augmentation},
+	author={Nicklas Hansen and Hao Su and Xiaolong Wang},
+	year={2021},
+	eprint={},
+	archivePrefix={arXiv},
+	primaryClass={cs.LG}
+}
