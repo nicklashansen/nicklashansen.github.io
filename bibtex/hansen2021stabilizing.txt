@@ -1,8 +1,8 @@
 @misc{hansen2021stabilizing,
-	title={Target Variance Matters: Stabilizing Deep Q-Learning under Data Augmentation},
+	title={Stabilizing Deep Q-Learning with ConvNets and Vision Transformers under Data Augmentation},
 	author={Nicklas Hansen and Hao Su and Xiaolong Wang},
 	year={2021},
-	eprint={},
+	eprint={2107.00644},
 	archivePrefix={arXiv},
 	primaryClass={cs.LG}
 }
