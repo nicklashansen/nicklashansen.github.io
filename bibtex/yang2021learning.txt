@@ -1,0 +1,8 @@
+@misc{yang2021learning,
+	title={Learning Vision-Guided Quadrupedal Locomotion End-to-End with Cross-Modal Transformers}, 
+	author={Ruihan Yang and Minghao Zhang and Nicklas Hansen and Huazhe Xu and Xiaolong Wang},
+	year={2021},
+	eprint={2107.03996},
+	archivePrefix={arXiv},
+	primaryClass={cs.LG}
+}
