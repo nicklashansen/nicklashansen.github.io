@@ -201,7 +201,7 @@ python3 src/train.py <span class="gray">\</span><br/>
             </code>
         </div>
         <p>
-            although this is not strictly necessary. I then run this script using a simple alias, which produces an output like the following:
+            although this file is not strictly necessary (the command to run could simply be written as a Python string). I then run this script using a simple alias, which produces an output like the following:
         </p>
         <div class="codeblock">
             <code>
@@ -215,13 +215,13 @@ python3 src/train.py <span class="gray">\</span><br/>
             </code>
         </div>
         <p>
-            If you want access to my <code>nsub</code> package, feel free to reach out on Slack.
+            During development I usually (like most others) run high variety, low repetition experiments. For this, I simply write out the script to run in <code>job.sh</code> and submit that to Nautilus by directly calling the <code>nsub.submit_jobs(cmd, job_name, range(num_seeds))</code> function. If you want access to my <code>nsub</code> package, feel free to reach out to me on Slack.
         </p>
     </div>
     <div>
         <h2 class="noselect">Experiment Tracking</h2>
         <p>
-            This is (especially) where I need your help. With so many jobs running, I need to keep track of which jobs are still running, which jobs have completed, and which jobs have failed. Further, I need good tools for experiment logging, piping and aggregation of results, which I believe I currently don't have. My current setup is as follows. I use a log directory structure that looks like this:
+            This is (especially) where there is room for improvement. With so many jobs running, I need to keep track of which jobs are still running, which jobs have completed, and which jobs have failed. Further, I need good tools for experiment logging, piping and aggregation of results, which I believe I currently don't have. My current setup is as follows. I use a log directory structure that looks like this:
         </p>
         <p>
             <code>
@@ -271,13 +271,13 @@ python3 src/train.py <span class="gray">\</span><br/>
         </p>
         <img src="nautilus/stability.png" alt="nsub Overview" class="center-img" width="70%"><br/>
         <p>
-            where we can optionally choose to plot standard deviations as well. While this approach works well for preparing results for publication, it is relatively cumbersome to work with during the early stages of a project, and I currently have no way to tell whether a job <span class="italic">failed</span> or is <span class="italic">currently</span> running.
+            where we can optionally choose to plot standard deviations as well. While this approach works well for preparing results for publication, it is relatively cumbersome to work with during the early stages of a project, and I currently have no good way to tell whether a job <span class="italic">failed</span> or is <span class="italic">currently</span> running, aside from the time stamp in <code>info.log</code> and a general intuition for how long jobs are expected to run.
         </p>
     </div>
     <div>
         <h2 class="noselect">Building PyPi Packages</h2>
         <p>
-            A great approach to modular software engineering in Python is to wrap up key functionality into packages. For example, the <code>nsub</code> package is a collection of scripts that I use to run experiments, I have a package for our <a href="https://github.com/nicklashansen/dmcontrol-generalization-benchmark">DMControl Generalization Benchmark</a>, and I am currently building a package for interacting with the xArm 7 robot and Intel Realsense cameras in Prof. Wang's lab. Since all of these code bases are likely to be reused in many different contexts, wrapping them as packages and using dynamic linking produces much cleaner workspaces and makes it easier to share code with others, both internally and publicly. If you are unfamiliar with Python packaging, it is extremely simple and only consists of a few steps using e.g. <code>setuptools</code> and <code>pip</code>:
+            A great approach to modular software engineering in Python is to wrap up key functionality into packages. For example, the <code>nsub</code> package is a collection of scripts that I use to run experiments, I have a package for our <a href="https://github.com/nicklashansen/dmcontrol-generalization-benchmark">DMControl Generalization Benchmark</a>, and I am currently building a package for interacting with the xArm 7 robot and Intel Realsense cameras in Prof. Wang's lab. Since all of these code bases are likely to be reused in many different contexts, wrapping them as packages and using dynamic linking produces much cleaner workspaces and makes it easier to share code with others, both internally and publicly. A potential drawback of this approach, however, is that it may be harder to ensure reproducibility if you are actively developing in multiple repositories. If you are unfamiliar with Python packaging, it is extremely simple and only consists of a few steps using e.g. <code>setuptools</code> and <code>pip</code>:
         </p>
         <ul class="bullets">
             <li>
