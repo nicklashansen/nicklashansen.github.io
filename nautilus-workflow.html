@@ -228,20 +228,20 @@ python3 src/train.py <span class="gray">\</span><br/>
         <p>
             This is (especially) where there is room for improvement. With so many jobs running, I need to keep track of which jobs are still running, which jobs have completed, and which jobs have failed. Further, I need good tools for experiment logging, piping and aggregation of results, which I believe I currently don't have. My current setup is as follows. I use a log directory structure that looks like this:
         </p>
-        <p>
+        <div class="codeblock">
             <code>
                 logs<br/>
-                |  - walker_walk<br/>
-                |  |  - svea<br/>
-                |  |  |  - overlay<br/>
-                |  |  |  |  - 0<br/>
+                | &mdash; walker_walk<br/>
+                |  | &mdash; svea<br/>
+                |  |  | &mdash; overlay<br/>
+                |  |  |  | &mdash; 0<br/>
                 |  |  |  |  |  model/<br/>
                 |  |  |  |  |  video/<br/>
                 |  |  |  |  |  eval.log<br/>
                 |  |  |  |  |  info.log<br/>
                 |  |  |  |  |  train.log<br/>
             </code>
-        </p>
+        </div>
         <p>
             where <code>info.log</code> contains time stamp, <code>git</code> hash, and the full list of arguments used in the experiment, e.g.
         </p>
@@ -280,7 +280,7 @@ python3 src/train.py <span class="gray">\</span><br/>
                 L.log('train/duration', time.time() - start_time, step)<br/>
                 L.log('train/episode', episode, step)<br/>
                 L.log('train/episode_reward', episode_reward, step)<br/>
-                L.dump()<br/>
+                L.dump()
             </code>
         </div>
         <p>
