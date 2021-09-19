@@ -11,6 +11,7 @@
     <link rel="manifest" href="files/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <style>
+        .post-title {font-size: 2em; margin-bottom: 16px;}
         .center-img {display: block; margin: auto;}
         div.codeblock {display: block; margin: auto; margin-top: 6px; margin-bottom: 6px; width: 100%; background-color: #f1f1f1; padding: 12px;}
         code {font-family: Consolas,"courier new"; color: rgb(41, 45, 62); background-color: #f1f1f1; padding: 2px; font-size: 105%;}
@@ -42,7 +43,7 @@
 </div>
 <div class="content" style="padding-bottom: 64px;">
     <div>
-        <h1 class="noselect">Workflow Overview</h1>
+        <h1 class="noselect post-title">Workflow Overview</h1>
         <h4 class="noselect italic">September 2021</h4>
         <br/>
         <p>
@@ -77,7 +78,7 @@
                     Listing all namespaces: <code id="kublist" onClick="window.getSelection().selectAllChildren(document.getElementById('kublist'));">alias context="kubectl config get-contexts"</code>
                 </li>
                 <li>
-                    Short-hands for changing to individual namespaces: e.g. <code>alias multi="kubectl config use-context rl-multitask"</code>
+                    Short-hands for changing to individual namespaces: e.g. <code id="shmulti" onClick="window.getSelection().selectAllChildren(document.getElementById('shmulti'));">alias multi="kubectl config use-context rl-multitask"</code>
                 </li>
                 <li>
                     Listing all of <span class="bold">my own</span> jobs and where they run, sorted by recency:
@@ -356,7 +357,6 @@ setup(<br/>
         <img src="nautilus/copilot2.png" alt="nsub Overview" class="center-img" width="35%"><br/>
         <p>Don't put blind trust in Copilot, but sure do take advantage of it and save yourself from some typing.</p>
     </div>
-    <div>
 </div>
 <div class="footer noselect">
     <div class="footer-content">
