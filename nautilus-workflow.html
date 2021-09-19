@@ -46,17 +46,20 @@
         <h4 class="noselect italic">September 2021</h4>
         <br/>
         <p>
-            Hi there! This is a brief introduction to my workflow when developing new projects and running experiments in Nautilus. As a disclaimer: <span class="italic">just because I do it this way does not mean it's the best way to do it</span>, and it is more than likely that I will do things differently in the future.
+            Hi there! This is a brief overview of my workflow when developing new projects and running experiments in Nautilus. As a disclaimer: <span class="italic">just because I do it this way does not mean it's the best way to do it</span>, and it is more than likely that I will do things differently in the future.
         </p>
+    </div>
+    <div>
+        <h2 class="noselect">Context</h2>
         <p>
-            I work on Reinforcement Learning (RL), which typically requires computationally intensive simulations and no significant reliance on external datasets. Experiments are rather short (typically between 12h and 2 days), but a large number of experiments are required in order to produce meaningful results. For example, reproducing the main results of our paper <a href="https://nicklashansen.github.io/SVEA/">Stabilizing Deep Q-Learning with ConvNets and Vision Transformers under Data Augmentation</a> (SVEA) requires running experiments on 5 different tasks from the DeepMind Control Suite, each with 6 different choices of data augmentation and each experiment is repeated 5 times to ensure that the results are reliable. With 150 experiments to run and an average duration of 24 hours, this translates to approximately 3,600 GPU hours excluding baselines and ablations. So running experiments efficiently and in parallel increases productivity dramatically.
+            I work on Reinforcement Learning (RL), which typically requires computationally intensive simulations and no significant reliance on external datasets. Experiments are rather short (typically between 12h and 2 days), but a large number of experiments are required in order to produce meaningful results. For example, reproducing the main result of our paper <a href="https://nicklashansen.github.io/SVEA/">Stabilizing Deep Q-Learning with ConvNets and Vision Transformers under Data Augmentation</a> (SVEA) requires running experiments on 5 different tasks from the DeepMind Control Suite, each with 6 different choices of data augmentation and each experiment is repeated with 5 different seeds to ensure that the results are reliable. With 150 experiments to run and an average duration of 24 hours, this translates to approximately 3,600 GPU hours excluding baselines and ablations. So running experiments efficiently and in parallel increases productivity dramatically.
         </p>
         <p>
             In the following, I will introduce some of the main concepts and tools that I use in my day-to-day research workflow, including development, running experiments in Nautilus, and improving coding efficiency.
         </p>
     </div>
     <div>
-        <h2 class="noselect">Development Overview</h2>
+        <h2 class="noselect">Overview</h2>
         <p>
             My workflow is roughly as follows: I <code>ssh</code> into a remote machine through <a href="https://code.visualstudio.com/">Visual Studio Code</a>, and keep everything related to my project there, both source code, datasets, logs, figures, etc., and I use <code>git</code> to track changes. All of my development takes place on the remote machine, and results are viewed directly in Visual Studio Code. Experiments are run in Nautilus through <code>ssh</code> from my local machine, and all logs are stored on the same remote machine used for development (this transfer is done using <code>rsync</code>). With a decent directory structure for logs, it is easy to locate logs from specific experiments, and I have automated both plotting of aggregate results and keeping track of which experiments are unfinished using Python.
         </p>
@@ -68,10 +71,10 @@
             I use a number of <code>bash</code> scripts and <code>alias</code>es to manage Nautilus jobs. While not everything is worth mentioning, I highlight a few of them here:<br/><br/>
             <ul class="bullets">
                 <li>
-                    Include <code>kubectl</code> completions: append <code>source <(kubectl completion bash)</code> to your <code>.bashrc</code>
+                    Include <code>kubectl</code> completions: append <code id="kubcompletion" onClick="window.getSelection().selectAllChildren(document.getElementById('kubcompletion'));">source <(kubectl completion bash)</code> to your <code>.bashrc</code>
                 </li>
                 <li>
-                    Listing all namespaces: <code>alias context="kubectl config get-contexts"</code>
+                    Listing all namespaces: <code id="kublist" onClick="window.getSelection().selectAllChildren(document.getElementById('kublist'));">alias context="kubectl config get-contexts"</code>
                 </li>
                 <li>
                     Short-hands for changing to individual namespaces: e.g. <code>alias multi="kubectl config use-context rl-multitask"</code>
@@ -79,7 +82,7 @@
                 <li>
                     Listing all of <span class="bold">my own</span> jobs and where they run, sorted by recency:
                     <div class="codeblock">
-                        <code>
+                        <code id="bashpods" onClick="window.getSelection().selectAllChildren(document.getElementById('bashpods'));">
                             pods() {kubectl get pods --no-headers -o wide --sort-by={metadata.creationTimestamp} | grep 'nh-' | tac;}
                         </code>
                     </div>
@@ -88,17 +91,17 @@
                 <li>
                     Deleting all completed jobs:
                     <div class="codeblock">
-                        <code>
+                        <code id="bashdelete" onClick="window.getSelection().selectAllChildren(document.getElementById('bashdelete'));">
                             kubectl get pods --no-headers | grep 'nh-' | grep 'Completed' | cut -d ' ' -f1 | gawk '{print substr($1, 1, length($1)-6);}' | parallel -r -P 16 kubectl delete jobs
                         </code>
                     </div>
-                    In practice, I use a <code>bash</code> script that iterates over all pod statuses that indicate completion or error.
+                    In practice, I use a <code>bash</code> script that iterates over all pod statuses that indicate completion or error, such that all non-running jobs can be cleaned up with a single command.
                 </li>
             </ul>
         </p>
     </div>
     <div>
-        <h2 class="noselect">Submitting Jobs in Nautilus</h2>
+        <h2 class="noselect">Submitting Jobs to Nautilus</h2>
         <p>
             For job submission, I have developed a small Python package that I call <code>nsub</code>, which interacts with Nautilus using the <code>kubernetes</code> Python API. The figure below gives an overview over its components that I explain in the following.
         </p>
@@ -107,7 +110,7 @@
             It requires a <code>job.yaml</code> configuration file describing which image to use, which scripts to run prior to the job itself, which resources to request, etc.; it is essentially a simplified version of the example from the <a href="https://ucsd-prp.gitlab.io/userdocs/tutorial/scheduling/">Nautilus documentation</a>. The <code>setup</code> field is necessary as there are certain files that I do not wish to keep in the Docker image itself, e.g. secrets and MuJoCo licenses, and I commonly use variants of packages that need to be dynamically linked as both their source code and locations change frequently. I typically do not modify the <code>job.yaml</code> file over the course of a project's lifetime, aside from maybe changing namespace. An example of the file is shown below:
         </p>
         <div class="codeblock">
-            <code>
+            <code id="jobyaml" onClick="window.getSelection().selectAllChildren(document.getElementById('jobyaml'));">
 kind: Job<br/>
 namespace: rl-multitask<br/>
 image: nicklashansen/imrl:latest &emsp;<span class="comment"># all dependencies pre-installed in a conda environment</span><br/>
@@ -137,7 +140,7 @@ ephemeral_storage: &emsp;<span class="comment"># if an external dataset is used,
             To make life easier when running a large number of experiments, I additionally use a <code>job.py</code> script that details which experiments to run. To stick with the running example of our SVEA paper, this script might iterate over all 5 tasks from the DeepMind Control Suite, run our method with each of 6 data augmentations, and repeat each experiment with 5 different seeds (typically 0-4). Concretely, this file may look as follows:
         </p>
         <div class="codeblock">
-            <code>
+            <code id="jobpy" onClick="window.getSelection().selectAllChildren(document.getElementById('jobpy'));">
 import nsub &emsp;<span class="comment"># my nautilus package</span><br/>
 import os<br/>
 import random<br/>
@@ -186,7 +189,7 @@ print(f'Submitted {num_jobs} job(s).')
         and running this script has now submitted a total of 150 jobs in less than a second. Obviously, we probably shouldn't occupy this many GPUs at once, but it proves my point nonetheless. The arguments shown in this script directly overwrite arguments in a <code>job.sh</code> file:
         </p>
         <div class="codeblock">
-            <code>
+            <code id="jobsh" onClick="window.getSelection().selectAllChildren(document.getElementById('jobsh'));">
 python3 src/train.py <span class="gray">\</span><br/>
 &emsp;--domain_name $DOMAIN <span class="gray">\</span><br/>
 &emsp;--task_name $TASK <span class="gray">\</span><br/>
@@ -204,8 +207,8 @@ python3 src/train.py <span class="gray">\</span><br/>
             although this file is not strictly necessary (the command to run could simply be written as a Python string). I then run this script using a simple alias, which produces an output like the following:
         </p>
         <div class="codeblock">
-            <code>
-                (dp) <span class="bold">nicklas@iPadde</span>:~$ job<br/>
+            <code id="console" onClick="window.getSelection().selectAllChildren(document.getElementById('console'));">
+                (t) <span class="bold">nicklas@iPadde</span>:~$ job<br/>
                 <span class="comment">Submitted job &lt;nh-svea-walk-conv-tzwfe-0&gt;</span><br/>
                 <span class="comment">Submitted job &lt;nh-svea-walk-conv-tzwfe-1&gt;</span><br/>
                 <span class="comment">...</span><br/>
@@ -215,7 +218,7 @@ python3 src/train.py <span class="gray">\</span><br/>
             </code>
         </div>
         <p>
-            During development I usually (like most others) run high variety, low repetition experiments. For this, I simply write out the script to run in <code>job.sh</code> and submit that to Nautilus by directly calling the <code>nsub.submit_jobs(cmd, job_name, range(num_seeds))</code> function. If you want access to my <code>nsub</code> package, feel free to reach out to me on Slack.
+            During development I usually (like most others) run high variety, low repetition experiments. For this, I simply write out the script to run in <code>job.sh</code> and submit that to Nautilus by directly calling the <code>nsub.submit_jobs(cmd, job_name, range(num_seeds))</code> function. If you want access to my <code>nsub</code> package, feel free to reach out to me on Slack, but note that it may not fit everyone's needs.
         </p>
     </div>
     <div>
@@ -241,7 +244,7 @@ python3 src/train.py <span class="gray">\</span><br/>
             where <code>info.log</code> contains time stamp, <code>git</code> hash, and the full list of arguments used in the experiment, e.g.
         </p>
         <div class="codeblock">
-            <code>
+            <code id="infolog" onClick="window.getSelection().selectAllChildren(document.getElementById('infolog'));">
                 {<br/>
                     &emsp; "timestamp": "2021-05-12 11:51:24.436383",<br/>
                     &emsp; "git": "7120b84",<br/>
@@ -262,7 +265,7 @@ python3 src/train.py <span class="gray">\</span><br/>
             By logging time stamp, hash, and arguments, each experiment is entirely reproducible &mdash; even as the code base evolves over time. <code>train.log</code> is similarly a <code>yaml</code> file with training statistics in the following format:
         </p>
         <div class="codeblock">
-            <code>
+            <code id="trainlog" onClick="window.getSelection().selectAllChildren(document.getElementById('trainlog'));">
                 {"episode_reward": 221.83129155216804, "episode": 40.0, "critic_loss": 12.678056478500366, "actor_loss": -32.06281546020508, "alpha_loss": 0.2850281069278717, "alpha_value": 0.06374894149871128, "aux_loss": 0.002858409071341157, "duration": 45.27503752708435, "step": 10000}
             </code>
         </div>
@@ -283,7 +286,7 @@ python3 src/train.py <span class="gray">\</span><br/>
             <li>
                 <span class="bold">Add <code>__init__.py</code> to directories:</span> this lets <code>setuptools</code> know that the directory is part of the package. You can leave the file empty, or you can import relevant submodules in that given directory, e.g.
                 <div class="codeblock">
-                    <code>
+                    <code id="initpy" onClick="window.getSelection().selectAllChildren(document.getElementById('initpy'));">
 import realxarm.callbacks<br/>
 import realxarm.wrappers<br/>
 from realxarm.env import xArm
@@ -293,7 +296,7 @@ from realxarm.env import xArm
             <li>
                 <span class="bold">Add <code>setup.py</code> to the root directory:</span> this file is used for building the package and also contains information about which parts of the directory should be packaged. An example of this is given below.
                 <div class="codeblock">
-                    <code>
+                    <code id="pypi" onClick="window.getSelection().selectAllChildren(document.getElementById('pypi'));">
 from setuptools import setup, find_packages<br/>
 <br/>
 with open("README.md", "r") as fh:<br/>
@@ -325,14 +328,14 @@ setup(<br/>
             <li>
                 <span class="bold">Install your package:</span> the package can now be installed by running
                 <div class="codeblock">
-                    <code>pip install -e .</code>
+                    <code id="pipinstall" onClick="window.getSelection().selectAllChildren(document.getElementById('pipinstall'));">pip install -e .</code>
                 </div>
                 where <code>-e .</code> is used to indicate that the package is in the current directory.
             </li>
             <li>
                 <span class="bold">Import your package:</span> you can now use the package in any other code base by importing it, e.g.
                 <div class="codeblock">
-                    <code>
+                    <code id="imports" onClick="window.getSelection().selectAllChildren(document.getElementById('imports'));">
                         from realxarm import xArm, callbacks, wrappers
                     </code>
                 </div>
@@ -343,7 +346,7 @@ setup(<br/>
     <div>
         <h2 class="noselect">GitHub Copilot</h2>
         <p>
-            Copilot is great. I use it every day. <span class="bold">If you are not using Copilot, you should definitely <a href="https://copilot.github.com/" class="bold">sign up</a></span>. I would estimate that Copilot writes about <span class="bold">20%</span> of my code, and about <span class="bold">50%</span> of my comments. Even some of this guide is written by Copilot. It is very useful for everyday programming tasks using common libraries, and it can often do well in line completion and next-line prediction, but it is less useful for writing entire functions. Recognize when Copilot is helpful and when it is not and it can increase your productivity substantially. To help convince you, here are some examples of Copilot suggestions from my coding session today:
+            Copilot is great. I use it every day. <span class="bold">If you are not using Copilot, you should definitely <a href="https://copilot.github.com/" class="bold">sign up</a></span>. I would estimate that Copilot writes about <span class="bold">20%</span> of my code, and about <span class="bold">50%</span> of my comments. Even some of this guide is written by Copilot. It is very useful for everyday programming tasks using common libraries, and it can often do well in line completion and next-line prediction, but it is less useful for writing entire functions. Recognize when Copilot is helpful and when it is not and it can increase your productivity substantially. To help convince you, here are some examples of Copilot suggestions from my coding session this morning, working on the real xArm package:
         </p>
         <p><span class="bold">Assertions:</span> Copilot understands the meaning of the variables and suggests useful assertions, including error messages. In this example, all of the comments on the arguments are written by Copilot as well, with only minor modifications to provide more detail (e.g. that we use Intel RealSense cameras).</p>
         <img src="nautilus/copilot0.png" alt="nsub Overview" class="center-img" width="70%"><br/>
@@ -354,4 +357,9 @@ setup(<br/>
         <p>Don't put blind trust in Copilot, but sure do take advantage of it and save yourself from some typing.</p>
     </div>
     <div>
+</div>
+<div class="footer noselect">
+    <div class="footer-content">
+        &copy; 2021 Nicklas Hansen. No web trackers. Design is my own. You are welcome to fork it <a href="https://github.com/nicklashansen/nicklashansen.github.io">here</a>.
+    </div>
 </div>
