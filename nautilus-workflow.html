@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .post-title {font-size: 2em; margin-bottom: 16px;}
-        .center-img {display: block; margin: auto; border: 1px solid #999;}
+        .center-img {display: block; margin: auto;}
+        .img-border {border: 1px solid #999;}
         div.codeblock {display: block; margin: auto; margin-top: 6px; margin-bottom: 6px; width: 100%; background-color: #f1f1f1; padding: 12px;}
         code {font-family: Consolas,"courier new"; color: rgb(41, 45, 62); background-color: #f1f1f1; padding: 2px; font-size: 105%;}
         code .comment {color: #719141;}
@@ -271,7 +272,19 @@ python3 src/train.py <span class="gray">\</span><br/>
             </code>
         </div>
         <p>
-            and <code>eval.log</code> contains the equivalent statistics for evaluation (if applicable). All of my logging functionality is publicly available at <a href="https://github.com/nicklashansen/dmcontrol-generalization-benchmark">this link</a>. From the <code>train.log</code> and <code>eval.log</code> files, I aggregate all results into a single figure, and the plotting script automatically warns me if any results are missing, either partially (i.e. it either failed or is currently running) or entirely (i.e. it never ran). Using the example from previously, we get the following figure:
+            and <code>eval.log</code> contains the equivalent statistics for evaluation (if applicable). All of my logging functionality is publicly available at <a href="https://github.com/nicklashansen/dmcontrol-generalization-benchmark">this link</a> and is largely based on <a href="https://github.com/denisyarats/pytorch_sac">this implementation</a>. Using this logging object, I can do as follows:
+        </p>
+        <div class="codeblock">
+            <code id="logging" onClick="window.getSelection().selectAllChildren(document.getElementById('logging'));">
+                L = Logger(work_dir)<br/>
+                L.log('train/duration', time.time() - start_time, step)<br/>
+                L.log('train/episode', episode, step)<br/>
+                L.log('train/episode_reward', episode_reward, step)<br/>
+                L.dump()<br/>
+            </code>
+        </div>
+        <p>
+            which appends to the <code>train.log</code> file. From the <code>train.log</code> and <code>eval.log</code> files, I aggregate all results into a single figure, and the plotting script automatically warns me if any results are missing, either partially (i.e. it either failed or is currently running) or entirely (i.e. it never ran). Using the example from previously, we get the following figure:
         </p>
         <img src="nautilus/stability.png" alt="nsub Overview" class="center-img" width="70%"><br/>
         <p>
@@ -350,11 +363,11 @@ setup(<br/>
             Copilot is great. I use it every day. <span class="bold">If you are not using Copilot, you should definitely <a href="https://copilot.github.com/" class="bold">sign up</a></span>. I would estimate that Copilot writes about <span class="bold">20%</span> of my code, and about <span class="bold">50%</span> of my comments. Even some of this guide is written by Copilot. It is very useful for everyday programming tasks using common libraries, and it can often do well in line completion and next-line prediction, but it is less useful for writing entire functions. Recognize when Copilot is helpful and when it is not and it can increase your productivity substantially. To help convince you, here are some examples of Copilot suggestions from my coding session this morning, working on the real xArm package:
         </p>
         <p><span class="bold">Assertions:</span> Copilot understands the meaning of the variables and suggests useful assertions, including error messages. In this example, all of the comments on the arguments are written by Copilot as well, with only minor modifications to provide more detail (e.g. that we use Intel RealSense cameras).</p>
-        <img src="nautilus/copilot0.png" alt="nsub Overview" class="center-img" width="70%"><br/>
+        <img src="nautilus/copilot0.png" alt="nsub Overview" class="center-img img-border" width="70%"><br/>
         <p><span class="bold">Common library calls:</span> Knowing that I imported OpenCV in the top of the file, Copilot understands the context of my if-statement and suggests to use OpenCV to save <code>obs</code> in the <code>self.observation_save_path</code> directory using the time step <code>self.t</code> as a formatted string. I rarely need to look up documentation for libraries anymore.</p>
-        <img src="nautilus/copilot1.png" alt="nsub Overview" class="center-img" width="60%"><br/>
+        <img src="nautilus/copilot1.png" alt="nsub Overview" class="center-img img-border" width="60%"><br/>
         <p><span class="bold">Function completion:</span> Copilot understands that I am using <code>ROS</code> for processing image observations from a camera, and suggests a full <code>unsubscribe</code> function (including comments) based only the function name. Better yet, it even recognizes that all my camera subscriptions are stored in <code>self.cameras</code>.</p>
-        <img src="nautilus/copilot2.png" alt="nsub Overview" class="center-img" width="35%"><br/>
+        <img src="nautilus/copilot2.png" alt="nsub Overview" class="center-img img-border" width="35%"><br/>
         <p>Don't put blind trust in Copilot, but sure do take advantage of it and save yourself from some typing.</p>
     </div>
 </div>
