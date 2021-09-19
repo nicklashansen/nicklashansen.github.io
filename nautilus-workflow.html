@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .post-title {font-size: 2em; margin-bottom: 16px;}
-        .center-img {display: block; margin: auto;}
+        .center-img {display: block; margin: auto; border: 1px solid #999;}
         div.codeblock {display: block; margin: auto; margin-top: 6px; margin-bottom: 6px; width: 100%; background-color: #f1f1f1; padding: 12px;}
         code {font-family: Consolas,"courier new"; color: rgb(41, 45, 62); background-color: #f1f1f1; padding: 2px; font-size: 105%;}
         code .comment {color: #719141;}
@@ -108,7 +108,7 @@
         </p>
         <img src="nautilus/nsub-overview.png" alt="nsub Overview" class="center-img" width="30%">
         <p>
-            It requires a <code>job.yaml</code> configuration file describing which image to use, which scripts to run prior to the job itself, which resources to request, etc.; it is essentially a simplified version of the example from the <a href="https://ucsd-prp.gitlab.io/userdocs/tutorial/scheduling/">Nautilus documentation</a>. The <code>setup</code> field is necessary as there are certain files that I do not wish to keep in the Docker image itself, e.g. secrets and MuJoCo licenses, and I commonly use variants of packages that need to be dynamically linked as both their source code and locations change frequently. I typically do not modify the <code>job.yaml</code> file over the course of a project's lifetime, aside from maybe changing namespace. An example of the file is shown below:
+            It requires a <code>job.yaml</code> configuration file describing which image to use, which scripts to run prior to the job itself, which resources to request, etc.; it is essentially a simplified version of the example from the <a href="https://ucsd-prp.gitlab.io/userdocs/tutorial/scheduling/">Nautilus documentation</a>. I typically do not modify the <code>job.yaml</code> file over the course of a project's lifetime, aside from maybe changing its default namespace. An example of the file is shown below:
         </p>
         <div class="codeblock">
             <code id="jobyaml" onClick="window.getSelection().selectAllChildren(document.getElementById('jobyaml'));">
@@ -135,7 +135,7 @@ ephemeral_storage: &emsp;<span class="comment"># if an external dataset is used,
             </code>
         </div>
         <p>
-            The <code>nsub</code> package has a function <code>submit_jobs</code> that take as argument a job name, a <code>bash</code> command to run, a <code>job.yaml</code> configuration file, as well as a list of seeds to run for that experiment. The function then creates the necessary job objects through the <code>kubernetes</code> API and submits them to Nautilus.
+            The <code>setup</code> field contains commands that are run prior to the job script itself, and is necessary as there are certain files that I do not wish to keep in the Docker image itself, e.g. secrets and MuJoCo licenses. Additionally, I commonly use variants of packages that need to be dynamically linked as both their source code and locations change frequently, and this is a simple way to achieve that goal. The <code>nsub</code> package has a function <code>submit_jobs</code> that take as argument a job name, a <code>bash</code> command to run, a <code>job.yaml</code> configuration file, as well as a list of seeds to run for that experiment. The function then creates the necessary job objects through the <code>kubernetes</code> API and submits them to Nautilus.
         </p>
         <p>
             To make life easier when running a large number of experiments, I additionally use a <code>job.py</code> script that details which experiments to run. To stick with the running example of our SVEA paper, this script might iterate over all 5 tasks from the DeepMind Control Suite, run our method with each of 6 data augmentations, and repeat each experiment with 5 different seeds (typically 0-4). Concretely, this file may look as follows:
