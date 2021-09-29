@@ -1,8 +1,6 @@
-@misc{hansen2021stabilizing,
+@inproceedings{hansen2021stabilizing,
 	title={Stabilizing Deep Q-Learning with ConvNets and Vision Transformers under Data Augmentation},
 	author={Nicklas Hansen and Hao Su and Xiaolong Wang},
+	booktitle={Conference on Neural Information Processing Systems},
 	year={2021},
-	eprint={2107.00644},
-	archivePrefix={arXiv},
-	primaryClass={cs.LG}
 }
