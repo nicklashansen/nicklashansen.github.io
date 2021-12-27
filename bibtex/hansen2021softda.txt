@@ -1,6 +1,6 @@
 @inproceedings{hansen2021softda,
 	title={Generalization in Reinforcement Learning by Soft Data Augmentation},
 	author={Nicklas Hansen and Xiaolong Wang},
-	booktitle={International Conference on Robotics and Automation},
+	booktitle={International Conference on Robotics and Automation (ICRA)},
 	year={2021},
 }
