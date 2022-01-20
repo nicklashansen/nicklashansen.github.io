@@ -1,0 +1,8 @@
+@misc{jangir2022look,
+      title={Look Closer: Bridging Egocentric and Third-Person Views with Transformers for Robotic Manipulation}, 
+      author={Rishabh Jangir and Nicklas Hansen and Sambaran Ghosal and Mohit Jain and Xiaolong Wang},
+      year={2022},
+      eprint={2201.07779},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
