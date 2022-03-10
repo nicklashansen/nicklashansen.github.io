@@ -21,7 +21,7 @@ p {line-height: 1.5em;}
 .italic {font-style: italic;}
 .bulletpoints {line-height: 1.5em;}
 .row {box-sizing: border-box;}
-.row-media {display: block; float: left; width: 160px; height: 90px; background-position: center; background-size: contain; background-repeat: no-repeat; border-radius: 6px;}
+.row-media {display: block; float: left; width: 160px; height: 90px; background-position: center; background-size: contain; background-repeat: no-repeat;}
 .row-text {display: block; float: left; margin-left: 12px; line-height: 1.5em; max-width: 566px;}
 .row-text span {line-height: inherit;}
 .clearfix {content: ""; clear: both; display: table;}
