@@ -25,7 +25,8 @@ p {line-height: 1.5em;}
 .row-text {display: block; float: left; margin-left: 12px; line-height: 1.5em; max-width: 566px;}
 .row-text span {line-height: inherit;}
 .clearfix {content: ""; clear: both; display: table;}
-.publication {margin-bottom: 32px;}
+.publication {margin-bottom: 32px; padding-left: 8px;}
+.publication.highlight {background-color: #fff8df; width: 100%; padding-top: 8px; padding-bottom: 8px; border-radius: 4px;}
 .press {width: 100px; height: 80px; border: 1px solid #def; margin-right: 12px; background-size: cover;}  
 .img-contain {background-size: contain !important;}
 .footer {background-color: #345; width: 100%}
