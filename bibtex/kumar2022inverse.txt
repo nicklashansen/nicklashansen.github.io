@@ -1,5 +1,5 @@
 @article{kumar2022inverse,
-	title={Inverse Reinforcement Learning from Diverse Third-Person Videos via Graph Abstraction},
+	title={Graph Inverse Reinforcement Learning from Diverse Videos},
 	author={Sateesh Kumar and Jonathan Zamora and Nicklas Hansen and Rishabh Jangir and Xiaolong Wang},
 	journal={arXiv preprint arXiv:2207.14299},
 	year={2022}
