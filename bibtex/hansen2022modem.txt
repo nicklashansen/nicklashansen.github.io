@@ -1,0 +1,6 @@
+@article{hansen2022modem,
+  title={MoDem: Accelerating Visual Model-Based Reinforcement Learning with Demonstrations},
+  author={Nicklas Hansen and Yixin Lin and Hao Su and Xiaolong Wang and Vikash Kumar and Aravind Rajeswaran},
+  journal={arXiv preprint},
+  year={2022}
+}

@@ -1,0 +1,6 @@
+@article{hansen2022lfs,
+  title={On Pre-Training for Visuo-Motor Control: Revisiting a Learning-from-Scratch Baseline},
+  author={Nicklas Hansen and Zhecheng Yuan and Yanjie Ze and Tongzhou Mu and Aravind Rajeswaran and Hao Su and Huazhe Xu and Xiaolong Wang+},
+  journal={arXiv preprint},
+  year={2022}
+}
