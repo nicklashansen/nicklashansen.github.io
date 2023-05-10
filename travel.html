@@ -13,82 +13,7 @@
     <link rel="icon" type="image/png" href="files/ucsd-logo.png">
     <link rel="manifest" href="files/site.webmanifest">
 	<link rel="stylesheet" href="style.css">
-
-	<style>
-	body {
-		background-color: #303336;
-		margin: 0;
-		padding: 0;
-	}
-
-	.header {
-		background: #303336;
-		color: #f3f3f3;
-	}
-
-	.header h1 {
-		color: #f3f3f3;
-	}
-
-	.header a {
-		color: #dedefa;
-	}
-
-	.content {
-		max-width: 1360px;
-	}
-
-	.footer {
-		background-color: #303336;
-	}
-
-	.footer .footer-content {
-		text-align: center;
-	}
-
-	.gallery {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		grid-gap: 15px;
-	}
-
-	.gallery-item {
-		position: relative;
-		overflow: hidden;
-		height: 300px;
-		border: 2px solid #303336;
-	}
-
-	.gallery-item img {
-		width: 100%;
-		height: 300px;
-		object-fit: cover;
-		transform: transform 0.3s ease;
-	}
-
-	.gallery-item:hover {
-		border-color: #404346;
-	}
-
-	.gallery-item:hover img {
-		transform: scale(1.05);
-	}
-
-	.gallery-item:hover .caption {
-		background-color: rgba(0, 0, 0, 0.4);
-		color: rgba(255, 255, 255, 0.6);
-	}
-
-	.caption {
-		position: absolute;
-		bottom: 0px;
-		right: 0px;
-		background-color: rgba(0, 0, 0, 0.7);
-		color: rgba(255, 255, 255, 0.8);
-		padding: 5px 10px;
-		font-size: 12px;
-	}
-	</style>
+	<link rel="stylesheet" href="travel.css">
 </head>
 
 <body>
@@ -120,7 +45,7 @@
 	</div>
 
 	<div class="content" style="padding-bottom: 64px; margin-top: 0;">
-		<div class="gallery">
+		<div class="gallery noselect">
 			<div class="gallery-item">
 				<img src="travel/0.jpg">
 				<div class="caption">Mount Sibayak, Indonesia (2017)</div>
@@ -213,14 +138,13 @@
 				<img src="travel/12.jpg">
 				<div class="caption">Akagera, Rwanda (2023)</div>
 			</div>
-			<div class="gallery-item">
-				<img>
+			<div class="gallery-item" style="border-color: #404346;">
 				<div class="caption">To be continued...</div>
 			</div>
 		</div>
 	
 		<div style="text-align: center; margin-top: 40px; margin-bottom: 20px; color: white; text-decoration: underline;">
-			<a href="~" style="color: white; text-decoration: underline;">Back to home</a>
+			<a href="https://nicklashansen.github.io" style="color: white; text-decoration: underline;">Back to home</a>
 		</div>
 	</div>
 
