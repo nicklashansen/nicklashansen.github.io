@@ -42,6 +42,10 @@
 		background-color: #303336;
 	}
 
+	.footer .footer-content {
+		text-align: center;
+	}
+
 	.gallery {
 	  display: grid;
 	  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -57,7 +61,12 @@
       width: 100%;
       height: 300px;
       object-fit: cover;
+	  transform: transform 0.3s ease;
     }
+
+	.gallery-item:hover img {
+	  transform: scale(1.1);
+	}
 
     .caption {
       position: absolute;
