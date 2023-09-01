@@ -1,0 +1,6 @@
+@article{Ze2023GNFactor,
+  title={Multi-Task Real Robot Learning with Generalizable Neural Feature Fields},
+  author={Yanjie Ze and Ge Yan and Yueh-Hua Wu and Annabella Macaluso and Yuying Ge and Jianglong Ye and Nicklas Hansen and Li Erran Li and Xiaolong Wang},
+  journal={CoRL}, 
+  year={2023},
+}

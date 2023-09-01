@@ -1,0 +1,6 @@
+@article{Feng2023Finetuning,
+  title={Finetuning Offline World Models in the Real World},
+  author={Yunhai Feng and Nicklas Hansen and Ziyan Xiong and Chandramouli Rajagopalan and Xiaolong Wang},
+  journal={CoRL}, 
+  year={2023},
+}
