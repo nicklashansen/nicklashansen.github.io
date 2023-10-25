@@ -1,0 +1,8 @@
+@misc{hansen2023tdmpc2,
+      title={TD-MPC2: Scalable, Robust World Models for Continuous Control}, 
+      author={Nicklas Hansen and Hao Su and Xiaolong Wang},
+      year={2023},
+      eprint={},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
