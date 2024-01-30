@@ -1,8 +1,6 @@
-@misc{lancaster2023modemv2,
+@inproceedings{lancaster2023modemv2,
       title={MoDem-V2: Visuo-Motor World Models for Real-World Robot Manipulation}, 
       author={Patrick Lancaster and Nicklas Hansen and Aravind Rajeswaran and Vikash Kumar},
-      year={2023},
-      eprint={2309.14236},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
+      booktitle={International Conference on Robotics and Automation (ICRA)},
+      year={2024},
 }

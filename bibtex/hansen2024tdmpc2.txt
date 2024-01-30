@@ -1,0 +1,6 @@
+@misc{hansen2024tdmpc2,
+	title={TD-MPC2: Scalable, Robust World Models for Continuous Control}, 
+	author={Nicklas Hansen and Hao Su and Xiaolong Wang},
+	booktitle={International Conference on Learning Representations (ICLR)},
+	year={2024}
+}
