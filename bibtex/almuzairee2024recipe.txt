@@ -1,0 +1,8 @@
+@misc{almuzairee2024recipe,
+      title={A Recipe for Unbounded Data Augmentation in Visual Reinforcement Learning}, 
+      author={Abdulaziz Almuzairee and Nicklas Hansen and Henrik I. Christensen},
+      year={2024},
+      eprint={2405.17416},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
