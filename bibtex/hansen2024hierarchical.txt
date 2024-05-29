@@ -1,0 +1,6 @@
+@misc{hansen2024hierarchical,
+	title={Hierarchical World Models as Visual Whole-Body Humanoid Controllers}, 
+	author={Nicklas Hansen, Jyothir S V, Vlad Sobal, Yann LeCun, Xiaolong Wang, Hao Su},
+	booktitle={arXiv preprint},
+	year={2024}
+}
