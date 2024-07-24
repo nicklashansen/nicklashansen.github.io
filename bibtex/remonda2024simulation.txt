@@ -1,0 +1,9 @@
+@misc{remonda2024simulation,
+      title={A Simulation Benchmark for Autonomous Racing with Large-Scale Human Data}, 
+      author={Adrian Remonda and Nicklas Hansen and Ayoub Raji and Nicola Musiu and Marko Bertogna and Eduardo Veas and Xiaolong Wang},
+      year={2024},
+      eprint={2407.16680},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2407.16680}, 
+}
