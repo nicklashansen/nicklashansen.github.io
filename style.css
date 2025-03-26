@@ -4,7 +4,7 @@ h1 {margin-bottom: 32px; font-size: 2.6em;}
 h2 {margin-top: 48px;}
 h1, h2 {color: #234;}
 h3, h4, h5 {color: #345;}
-h1, h2, h3, h4, h5, a, p, span, body, div {font-weight: normal; font-family: 'Lato', Verdana, Helvetica, sans-serif;}
+h1, h2, h3, h4, h5, a, p, span, body, div {font-weight: normal; font-family: "Lato", Verdana, Helvetica, sans-serif;}
 .header {width: 100%; padding-top: 16px; padding-bottom: 0px;}
 .header-div {border-bottom: #ddd 2px solid; padding-bottom: 16px;}
 .header-profile-picture, .header-text {display: inline-block;}
@@ -30,9 +30,9 @@ p {line-height: 1.5em;}
 .publication.highlight {background-color: #fff8df; width: 100%; padding-top: 8px; padding-bottom: 8px; border-radius: 4px;}
 .press {width: 100px; height: 80px; border: 1px solid #def; margin-right: 12px; background-size: cover;}  
 .img-contain {background-size: contain !important;}
-.footer {background-color: #345; width: 100%}
-.footer-content {color: #fff; font-size: 10px; padding: 6px 0; max-width: 780px; margin: auto;}
-.footer-content a {color: #fff; text-decoration: underline;}
+.footer {border-top: #ddd 2px solid; width: 100%; max-width: 780px; margin: auto;}
+.footer-content {color: #345; font-size: 10px; padding: 6px 0; max-width: 780px; margin: auto;}
+.footer-content a {color: #2471a3 !important; text-decoration: underline;}
 .footer-content a:hover {color: #f09228 !important;}
 .stars {font-size: 10px; display: inline-block; margin-left: 6px; color: #666;}
 
