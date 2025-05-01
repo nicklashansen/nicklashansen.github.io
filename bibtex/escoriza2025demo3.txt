@@ -1,9 +1,6 @@
 @misc{escoriza2025multistage,
-      title={Multi-Stage Manipulation with Demonstration-Augmented Reward, Policy, and World Model Learning}, 
+      title={Multi-Stage Manipulation with Demonstration-Augmented Reward, Policy, and World Model Learning},
       author={Adrià López Escoriza and Nicklas Hansen and Stone Tao and Tongzhou Mu and Hao Su},
+      booktitle={International Conference on Machine Learning (ICML)},
       year={2025},
-      eprint={2503.01837},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2503.01837}, 
 }

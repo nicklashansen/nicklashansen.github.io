@@ -1,4 +1,4 @@
-@inproceedings{Hansen2022pre,
+@inproceedings{Hansen2023pre,
   title={On Pre-Training for Visuo-Motor Control: Revisiting a Learning-from-Scratch Baseline},
   author={Hansen, Nicklas and Yuan, Zhecheng and Ze, Yanjie and Mu, Tongzhou and Rajeswaran, Aravind and Su, Hao and Xu, Huazhe and Wang, Xiaolong},
   booktitle={International Conference on Machine Learning (ICML)},
