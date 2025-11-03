@@ -1,0 +1,8 @@
+@inproceedings{
+wang2025myochallenge,
+title={MyoChallenge 2024: A New Benchmark for Physiological Dexterity and Agility in Bionic Humans},
+author={Cheryl Wang and Chun Kwang Tan and Balint K Hodossy and Shirui Lyu and Pierre Schumacher and James Heald and Kai Biegun and Samo Hromadka and Maneesh Sahani and Gunwoo Park and Beomsoo Shin and JongHyun Park and SEUNGBUM KOO and Chenhui Zuo and Chengtian Ma and Yanan Sui and Nicklas Hansen and Stone Tao and Yuan Gao and Hao Su and Seungmoon Song and Letizia Gionfrida and Massimo Sartori and Guillaume Durandau and Vikash Kumar and Vittorio Caggiano},
+booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+year={2025},
+url={https://openreview.net/forum?id=1dSLbhErNv}
+}
