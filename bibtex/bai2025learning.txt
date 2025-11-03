@@ -1,0 +1,8 @@
+@misc{bai2025learning,
+      title={Learning to Design Soft Hands using Reward Models}, 
+      author={Xueqian Bai and Nicklas Hansen and Adabhav Singh and Michael T. Tolley and Yan Duan and Pieter Abbeel and Xiaolong Wang and Sha Yi},
+      year={2025},
+      eprint={2510.17086},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+}
