@@ -1,7 +1,9 @@
 @misc{Hansen2025Newt,
 	title={Learning Massively Multitask World Models for Continuous Control}, 
 	author={Nicklas Hansen and Hao Su and Xiaolong Wang},
-	booktitle={Preprint},
-	url={https://www.nicklashansen.com/NewtWM},
-	year={2025}
+	year={2025},
+	eprint={2511.19584},
+	archivePrefix={arXiv},
+	primaryClass={cs.LG},
+	url={https://arxiv.org/abs/2511.19584}, 
 }
