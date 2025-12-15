@@ -22,6 +22,10 @@
                 div.scrollIntoView({behavior: "smooth", block: "start"});
             }
         }
+        function scrollToContact() {
+            var div = document.getElementById("contact");
+            div.scrollIntoView({behavior: "smooth", block: "start"});
+        }
     </script>
 </head>
 <body>
@@ -36,7 +40,7 @@
                 PhD candidate, UC San Diego
             </div>
             <div class="header-links">
-                <a class="btn" href="#contact">Email</a> /
+                <a class="btn" href="javascript:void(0);" onclick="scrollToContact()">Email</a> /
                 <a class="btn" href="https://scholar.google.com/citations?hl=en&user=8wGH7wsAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> /
                 <a class="btn" href="https://github.com/nicklashansen">GitHub</a> /
                 <a class="btn" href="https://bsky.app/profile/ncklashansen.bsky.social">Bluesky</a> /
@@ -49,7 +53,7 @@
 <div class="content" style="padding-bottom: 64px;">
     <div>
         <p>
-            I am a PhD candidate at <a href="https://ucsd.edu">UC San Diego</a>, advised by Professors <a href="https://xiaolonw.github.io">Xiaolong Wang</a> and <a href="https://cseweb.ucsd.edu/~haosu">Hao Su</a>. During my PhD, I have been fortunate to intern at <a href="https://www.nvidia.com/en-us/research">NVIDIA Research</a> and Meta AI (<a href="https://ai.facebook.com">FAIR</a>), and my research has been supported by the <a href="https://blogs.nvidia.com/blog/graduate-research-fellowships-for-2024">NVIDIA Graduate Research Fellowship</a>. Before starting my PhD, I was a visiting student at <a href="https://www.berkeley.edu">UC Berkeley</a> and a research intern at <a href="https://bair.berkeley.edu">Berkeley AI Research</a>. I received my BS and MS degrees from the Technical University of Denmark (<a href="https://www.dtu.dk/english">DTU</a>).<br/><br/>
+            I am a final-year PhD student at <a href="https://ucsd.edu">UC San Diego</a>, advised by Professors <a href="https://xiaolonw.github.io">Xiaolong Wang</a> and <a href="https://cseweb.ucsd.edu/~haosu">Hao Su</a>. During my PhD, I have been fortunate to intern at <a href="https://www.nvidia.com/en-us/research">NVIDIA Research</a> and Meta AI (<a href="https://ai.facebook.com">FAIR</a>), and my research has been supported by the <a href="https://blogs.nvidia.com/blog/graduate-research-fellowships-for-2024">NVIDIA Graduate Research Fellowship</a>. Before starting my PhD, I was a visiting student at <a href="https://www.berkeley.edu">UC Berkeley</a> and a research intern at <a href="https://bair.berkeley.edu">Berkeley AI Research</a>. I received my BS and MS degrees from the Technical University of Denmark (<a href="https://www.dtu.dk/english">DTU</a>).<br/><br/>
             I am interested in building reliable, open-source algorithms for decision-making. I like robots 🤖, plants 🪴, <a href="javascript:void(0);" onclick="showBooks()">books</a> 📚, and <span class="italic">they/them</span> pronouns 🏳️‍🌈.
         </p>
     </div>
@@ -357,8 +361,7 @@
             <li>George Orwell, <span class="bold">Animal Farm</span></li>
         </ul>
     </div>
-    <div class="noselect">
-        <a id="contact"></a>
+    <div id="contact" class="noselect">
         <h2>Contact</h2>
         You are welcome to contact me regarding my research! My email is <span class="bold">hello</span> [at] <span class="bold">nicklashansen</span> 。com
     </div>
