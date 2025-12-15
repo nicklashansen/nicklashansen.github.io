@@ -30,7 +30,7 @@ p {line-height: 1.5em;}
 .publication.highlight {background-color: #f7efd4; width: 100%; padding-top: 8px; padding-bottom: 8px; border-radius: 4px;}
 .press {width: 100px; height: 80px; border: 1px solid #def; margin-right: 12px; background-size: cover;}  
 .img-contain {background-size: contain !important;}
-#hidden {display: none !important;}
+#hidden {display: none;}
 .footer {border-top: #ddd 2px solid; width: 100%; max-width: 780px; margin: auto;}
 .footer-content {color: #345; font-size: 10px; padding: 6px 0; max-width: 780px; margin: auto;}
 .footer-content a {color: #2471a3 !important; text-decoration: underline;}

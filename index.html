@@ -18,7 +18,7 @@
         function showBooks() {
             var div = document.getElementById("hidden");
             if (div.style.display === "none") {
-                div.style.display = "block";
+                div.style.display = "block !important";
                 div.scrollIntoView({behavior: "smooth"});
             }
         }
