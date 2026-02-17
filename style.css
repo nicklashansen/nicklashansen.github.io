@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, a, p, span, body, div {font-weight: normal; font-family: "La
 .header-subtitle {margin-bottom: 12px;}
 .header-profile-picture {width: 112px; height: 112px; margin-right: 16px; border-radius: 50%; background-image: url(files/me.png); background-position: center; background-size: contain; background-repeat: no-repeat;}
 .content {max-width: 780px; padding-left: 16px; padding-right: 16px; margin: auto; margin-top: 48px;}
+.content.div {display: block; margin: auto;}
 .hr {width: 100%; height: 1px; margin: 48px 0; background-color: #d6dbdf;}
 a {color: #2471a3; text-decoration: none;}
 a:focus, a:hover {color: #f09228;}
@@ -26,9 +27,13 @@ p {line-height: 1.5em;}
 .row-text {display: block; float: left; margin-left: 12px; line-height: 1.5em; max-width: 598px;}
 .row-text span {line-height: inherit;}
 .clearfix {content: ""; clear: both; display: table;}
+.interests {display: block}
+.interest {display: inline-block; width: 242px; border: #ddd 0px solid; border-radius: 4px; margin: 6px;}
+.video-container {width: 100%; max-width: 242px; margin: auto;}
+.interest-text {display: block; margin: auto; width: 242px; margin-top: 8px;}
 .publication {margin-bottom: 32px; padding-left: 8px;}
 .publication.highlight {background-color: #f7efd4; width: 100%; padding-top: 8px; padding-bottom: 8px; border-radius: 4px;}
-.press {width: 100px; height: 80px; border: 1px solid #def; margin-right: 12px; background-size: cover;}  
+.press {width: 100px; height: 80px; margin-right: 12px; background-size: cover;}  
 .img-contain {background-size: contain !important;}
 .footer {border-top: #ddd 2px solid; width: 100%; max-width: 780px; margin: auto;}
 .footer-content {color: #345; font-size: 10px; padding: 6px 0; max-width: 780px; margin: auto;}
