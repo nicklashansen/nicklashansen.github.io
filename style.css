@@ -28,9 +28,9 @@ p {line-height: 1.5em;}
 .row-text span {line-height: inherit;}
 .clearfix {content: ""; clear: both; display: table;}
 .interests {display: block}
-.interest {display: inline-block; width: 242px; border: #ddd 0px solid; border-radius: 4px; margin: 6px;}
-.video-container {width: 100%; max-width: 242px; margin: auto;}
-.interest-text {display: block; margin: auto; width: 242px; margin-top: 8px;}
+.interest {display: inline-block; width: 246px; margin-right: 10px;}
+.video-container {width: 100%; max-width: 246px; margin: auto;}
+.interest-text {display: block; margin: auto; width: 246px; margin-top: 8px;}
 .publication {margin-bottom: 32px; padding-left: 8px;}
 .publication.highlight {background-color: #f7efd4; width: 100%; padding-top: 8px; padding-bottom: 8px; border-radius: 4px;}
 .press {width: 100px; height: 80px; margin-right: 12px; background-size: cover;}  
