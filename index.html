@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon" href="files/ucsd-logo.png">
     <link rel="icon" type="image/png" href="files/ucsd-logo.png">
     <link rel="manifest" href="files/site.webmanifest">
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="style.css?v=1.2">
     <script>
         function showBooks() {
             var div = document.getElementById("hidden");
@@ -62,7 +62,7 @@
         <div class="interests">
             <div class="interest">
                 <div class="video-container">
-                    <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+                    <video playsinline="" autoplay="" loop="" preload="metadata" muted="" width="100%">
                         <source src="files/reinforcement-learning.mp4" type="video/mp4"/>
                     </video>
                 </div>
@@ -73,7 +73,7 @@
             </div>
             <div class="interest">
                 <div class="video-container">
-                    <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+                    <video playsinline="" autoplay="" loop="" preload="metadata" muted="" width="100%">
                         <source src="files/robot-learning.mp4" type="video/mp4"/>
                     </video>
                 </div>
@@ -84,7 +84,7 @@
             </div>
             <div class="interest">
                 <div class="video-container">
-                    <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+                    <video playsinline="" autoplay="" loop="" preload="metadata" muted="" width="100%">
                         <source src="files/generalization.mp4" type="video/mp4"/>
                     </video>
                 </div>
@@ -102,7 +102,7 @@
     <div>
         <h2 class="noselect">Publications and preprints</h2>
         <p>Papers sorted by recency. Representative papers are <span style="background-color: #fff8df">highlighted</span>.</p>
-        <div class="highlight publication row clearfix">
+        <div class="highlight publication row">
             <div class="row-media" style="background-image: url(files/newt.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://www.nicklashansen.com/NewtWM">Learning Massively Multitask World Models for Continuous Control</a><br/>
@@ -111,7 +111,7 @@
                 <a class="btn btn-orange" href="https://www.nicklashansen.com/NewtWM">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2511.19584">arXiv</a> / <a class="btn" href="https://github.com/nicklashansen/newt">code</a> / <a class="btn" href="https://huggingface.co/nicklashansen/newt">models</a> / <a class="btn" href="https://huggingface.co/datasets/nicklashansen/mmbench">dataset</a> / <a class="btn btn-dark" href="bibtex/hansen2025newt.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/tips.png);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2603.22293">Turn-Level Information-Potential Reward Shaping for Search-Augmented LLMs</a><br/>
@@ -120,7 +120,7 @@
                 <a class="btn btn-red" href="https://arxiv.org/abs/2603.22293">pdf</a> / <a class="btn" href="https://github.com/ucsd-wang-lab-lm/tips">code</a> / <a class="btn btn-dark" href="bibtex/xie2026tips.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/softhands.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://hakuna25.github.io/softhand">Learning to Design Soft Hands using Reward Models</a><br/>
@@ -129,7 +129,7 @@
                 <a class="btn btn-orange" href="https://hakuna25.github.io/softhand">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2510.17086">pdf</a> / <a class="btn btn-dark" href="bibtex/bai2025learning.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/myochallenge.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://openreview.net/forum?id=1dSLbhErNv">MyoChallenge 2024: A New Benchmark for Physiological Dexterity and Agility in Bionic Humans</a><br/>
@@ -138,7 +138,7 @@
                 <a class="btn btn-red" href="https://openreview.net/forum?id=1dSLbhErNv">pdf</a> / <a class="btn" href="https://sites.google.com/view/myosuite/myochallenge/myochallenge-2024">code</a> / <a class="btn btn-dark" href="bibtex/wang2025myochallenge.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/insertion.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://openreview.net/pdf?id=DR3n6IqGKI">Generalizable Robotic Insertion with World Models</a><br/>
@@ -147,7 +147,7 @@
                 <a class="btn btn-red" href="https://openreview.net/pdf?id=DR3n6IqGKI">pdf</a> / <a class="btn btn-dark" href="bibtex/hansen2025insertion.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/demo3.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2503.01837">Multi-Stage Manipulation with Demonstration-Augmented Reward, Policy and World Model Learning</a><br/>
@@ -156,7 +156,7 @@
                 <a class="btn btn-orange" href="https://adrialopezescoriza.github.io/demo3">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2503.01837">arXiv</a> / <a class="btn" href="https://github.com/adrialopezescoriza/demo3">code</a> / <a class="btn btn-dark" href="bibtex/escoriza2025demo3.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/pwm.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2407.02466">Policy Learning with Multi-Task World Models</a><br/>
@@ -165,7 +165,7 @@
                 <a class="btn btn-orange" href="http://www.imgeorgiev.com/pwm">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2407.02466">arXiv</a> / <a class="btn" href="https://github.com/imgeorgiev/PWM">code</a> / <a class="btn" href="https://huggingface.co/imgeorgiev/pwm">models</a> / <a class="btn btn-dark" href="bibtex/georgiev2024pwm.txt">bibtex</a>
             </div>
         </div>
-        <div class="highlight publication row clearfix">
+        <div class="highlight publication row">
             <div class="row-media" style="background-image: url(files/puppeteer.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2405.18418">Hierarchical World Models as Visual Whole-Body Humanoid Controllers</a><br/>
@@ -174,7 +174,7 @@
                 <a class="btn btn-orange" href="https://www.nicklashansen.com/rlpuppeteer">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2405.18418">arXiv</a> / <a class="btn" href="https://github.com/nicklashansen/puppeteer">code</a> / <a class="btn" href="https://drive.google.com/drive/folders/1cgt9HzquO5mcB71Krv0C0mD10scfMquO">models</a> / <a class="btn btn-dark" href="bibtex/hansen2024hierarchical.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/assetto-corsa.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2407.16680">A Simulation Benchmark for Autonomous Racing with Large-Scale Human Data</a><br/>
@@ -183,7 +183,7 @@
                 <a class="btn btn-orange" href="https://assetto-corsa-gym.github.io">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2407.16680">arXiv</a> / <a class="btn" href="https://github.com/dasGringuen/assetto_corsa_gym">code</a> / <a class="btn" href="https://huggingface.co/datasets/dasgringuen/assettoCorsaGym">dataset</a> / <a class="btn btn-dark" href="bibtex/remonda2024simulation.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/sada.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2405.17416">A Recipe for Unbounded Data Augmentation in Visual Reinforcement Learning</a><br/>
@@ -192,7 +192,7 @@
                 <a class="btn btn-orange" href="https://aalmuzairee.github.io/SADA">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2405.17416">arXiv</a> / <a class="btn" href="https://github.com/aalmuzairee/dmcgb2">code</a> / <a class="btn btn-dark" href="bibtex/almuzairee2024recipe.txt">bibtex</a>
             </div>
         </div>
-        <div class="highlight publication row clearfix">
+        <div class="highlight publication row">
             <div class="row-media" style="background-image: url(files/tdmpc2.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2310.16828">TD-MPC2: Scalable, Robust World Models for Continuous Control</a><br/>
@@ -201,7 +201,7 @@
                 <a class="btn btn-orange" href="https://www.tdmpc2.com">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2310.16828">arXiv</a> / <a class="btn" href="https://github.com/nicklashansen/tdmpc2">code</a> / <a class="btn" href="https://www.tdmpc2.com/models">models</a> / <a class="btn" href="https://www.tdmpc2.com/dataset">dataset</a> / <a class="btn btn-dark" href="bibtex/hansen2024tdmpc2.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/rtx.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2310.08864">Open X-Embodiment: Robotic Learning Datasets and RT-X Models</a><br/>
@@ -210,7 +210,7 @@
                 <a class="btn btn-orange" href="https://robotics-transformer-x.github.io">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2310.08864">arXiv</a> / <a class="btn" href="https://console.cloud.google.com/storage/browser/gresearch/robotics/open_x_embodiment_and_rt_x_oss;tab=objects?prefix=&forceOnObjectsSortingFiltering=false">code</a> / <a class="btn" href="https://docs.google.com/spreadsheets/d/1rPBD77tk60AEIGZrGSODwyyzs5FgCU9Uz3h-3_t2A9g/edit#gid=0">dataset</a> / <a class="btn btn-dark" href="bibtex/open_x_embodiment_rt_x.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/modemv2.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2309.14236">MoDem-V2: Visuo-Motor World Models for Real-World Robot Manipulation</a><br/>
@@ -219,7 +219,7 @@
                 <a class="btn btn-orange" href="https://sites.google.com/view/modem-v2">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2309.14236">arXiv</a> / <a class="btn" href="https://github.com/facebookresearch/modemv2">code</a> / <a class="btn btn-dark" href="bibtex/lancaster2024modemv2.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/gnfactor.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2308.16891">GNFactor: Multi-Task Real Robot Learning with Generalizable Neural Feature Fields</a><br/>
@@ -228,7 +228,7 @@
                 <a class="btn btn-orange" href="https://yanjieze.com/GNFactor">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2308.16891">arXiv</a> / <a class="btn" href="https://github.com/YanjieZe/GNFactor">code</a> / <a class="btn btn-dark" href="bibtex/ze2023gnfactor.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/owm.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2310.16029">Finetuning Offline World Models in the Real World</a><br/>
@@ -237,7 +237,7 @@
                 <a class="btn btn-orange" href="https://www.yunhaifeng.com/FOWM">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2310.16029">arXiv</a> / <a class="btn" href="https://github.com/fyhMer/fowm">code</a> / <a class="btn btn-dark" href="bibtex/feng2023finetuning.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/lfs.png);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2212.05749">On Pre-Training for Visuo-Motor Control: Revisiting a Learning-from-Scratch Baseline</a><br/>
@@ -246,7 +246,7 @@
                 <a class="btn btn-red" href="https://arxiv.org/abs/2212.05749">arXiv</a> / <a class="btn" href="https://github.com/gemcollector/learning-from-scratch">code</a> / <a class="btn btn-dark" href="bibtex/hansen2023lfs.txt">bibtex</a>
             </div>
         </div>
-        <div class="highlight publication row clearfix">
+        <div class="highlight publication row">
             <div class="row-media" style="background-image: url(files/modem.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2212.05698">MoDem: Accelerating Visual Model-Based Reinforcement Learning with Demonstrations</a><br/>
@@ -255,7 +255,7 @@
                 <a class="btn btn-orange" href="https://www.nicklashansen.com/modemrl">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2212.05698">arXiv</a> / <a class="btn" href="https://github.com/facebookresearch/modem">code</a> / <a class="btn btn-dark" href="bibtex/hansen2022modem.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/xtra.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2210.10763">On the Feasibility of Cross-Task Transfer with Model-Based Reinforcement Learning</a><br/>
@@ -264,7 +264,7 @@
                 <a class="btn btn-orange" href="https://www.nicklashansen.com/xtra">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2210.10763">arXiv</a> / <a class="btn" href="https://github.com/mlpc-ucsd/XTRA">code</a> / <a class="btn btn-dark" href="bibtex/xu2022xtra.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/3d4rl.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2210.07241">Visual Reinforcement Learning with Self-Supervised 3D Representations</a><br/>
@@ -273,7 +273,7 @@
                 <a class="btn btn-orange" href="https://yanjieze.com/3d4rl">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2210.07241">arXiv</a> / <a class="btn" href="https://github.com/YanjieZe/rl3d">code</a> / <a class="btn btn-dark" href="bibtex/ze2022rl3d.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/graphirl.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2207.14299">Graph Inverse Reinforcement Learning from Diverse Videos</a><br/>
@@ -282,7 +282,7 @@
                 <a class="btn btn-orange" href="https://sateeshkumar21.github.io/GraphIRL">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2207.14299">arXiv</a> / <a class="btn" href="https://github.com/SateeshKumar21/graph-inverse-rl">code</a> / <a class="btn btn-dark" href="bibtex/kumar2022inverse.txt">bibtex</a>
             </div>
         </div>
-        <div class="highlight publication row clearfix">
+        <div class="highlight publication row">
             <div class="row-media" style="background-image: url(files/tdmpc.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2203.04955">Temporal Difference Learning for Model Predictive Control</a><br/>
@@ -291,7 +291,7 @@
                 <a class="btn btn-orange" href="https://www.nicklashansen.com/td-mpc">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2203.04955">arXiv</a> / <a class="btn" href="https://www.nicklashansen.com/td-mpc/slides.pdf">slides</a> / <a class="btn" href="https://github.com/nicklashansen/tdmpc">code</a> / <a class="btn btn-dark" href="bibtex/hansen2022tdmpc.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/LookCloser.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2201.07779">Look Closer: Bridging Egocentric and Third-Person Views with Transformers for Robotic Manipulation</a><br/>
@@ -301,7 +301,7 @@
                 <a class="btn btn-orange" href="https://jangirrishabh.github.io/lookcloser">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2201.07779">arXiv</a> / <a class="btn" href="https://github.com/jangirrishabh/look-closer">code</a> / <a class="btn btn-dark" href="bibtex/jangir2022look.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/LocoTransformer.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2107.03996">Learning Vision-Guided Quadrupedal Locomotion End-to-End with Cross-Modal Transformers</a><br/>
@@ -310,7 +310,7 @@
                 <a class="btn btn-orange" href="https://rchalyang.github.io/LocoTransformer">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2107.03996">arXiv</a> / <a class="btn" href="https://github.com/Mehooz/vision4leg">code</a> / <a class="btn btn-dark" href="bibtex/yang2021learning.txt">bibtex</a>
             </div>
         </div>
-        <div class="highlight publication row clearfix">
+        <div class="highlight publication row">
             <div class="row-media" style="background-image: url(files/StabilizedQValueEstimation.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2107.00644">Stabilizing Deep Q-Learning with ConvNets and Vision Transformers under Data Augmentation</a><br/>
@@ -319,7 +319,7 @@
                 <a class="btn btn-orange" href="https://www.nicklashansen.com/SVEA">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2107.00644">arXiv</a> / <a class="btn" href="https://github.com/nicklashansen/dmcontrol-generalization-benchmark">code</a> / <a class="btn btn-dark" href="bibtex/hansen2021stabilizing.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/SoftDataAugmentation.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2011.13389">Generalization in Reinforcement Learning by Soft Data Augmentation</a><br/>
@@ -328,7 +328,7 @@
                 <a class="btn btn-orange" href="https://www.nicklashansen.com/SODA">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2011.13389">arXiv</a> / <a class="btn" href="https://github.com/nicklashansen/dmcontrol-generalization-benchmark">code</a> / <a class="btn btn-dark" href="bibtex/hansen2021softda.txt">bibtex</a>
             </div>
         </div>
-        <div class="highlight publication row clearfix">
+        <div class="highlight publication row">
             <div class="row-media" style="background-image: url(files/SelfSupervisedPolicyAdaptation.gif);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2007.04309">Self-Supervised Policy Adaptation during Deployment</a><br/>
@@ -337,7 +337,7 @@
                 <a class="btn btn-orange" href="https://www.nicklashansen.com/PAD">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2007.04309">arXiv</a> / <a class="btn btn-purple" href="https://bair.berkeley.edu/blog/2021/02/25/ss-adaptation">blog</a> / <a class="btn" href="https://github.com/nicklashansen/policy-adaptation-during-deployment">code</a> / <a class="btn btn-dark" href="bibtex/hansen2021deployment.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/ShortTermBloodGlucosePrediction.png);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2002.02805">Short Term Blood Glucose Prediction based on Continuous Glucose Monitoring Data</a><br/>
@@ -349,7 +349,7 @@
     </div>
     <div>
         <h2 class="noselect">Select open-source projects</h2>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/tdmpc2-world-model.png);"></div>
             <div class="row-text">
                 <a class="bold" href="https://github.com/nicklashansen/tdmpc">TD-MPC2 Official Implementation<span class="stars">&#11088; 758</span></a><br/>
@@ -358,7 +358,7 @@
                 <a class="btn btn-orange" href="https://tdmpc2.com">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2310.16828">arXiv</a> / <a class="btn" href="https://github.com/nicklashansen/tdmpc2">code</a> / <a class="btn btn-dark" href="bibtex/hansen2024tdmpc2.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/tdmpc-world-model.png);"></div>
             <div class="row-text">
                 <a class="bold" href="https://github.com/nicklashansen/tdmpc">TD-MPC Official Implementation<span class="stars">&#11088; 501</span></a><br/>
@@ -367,7 +367,7 @@
                 <a class="btn btn-orange" href="https://www.nicklashansen.com/td-mpc">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2203.04955">arXiv</a> / <a class="btn" href="https://www.nicklashansen.com/td-mpc/slides.pdf">slides</a> / <a class="btn" href="https://github.com/nicklashansen/tdmpc">code</a> / <a class="btn btn-dark" href="bibtex/hansen2022tdmpc.txt">bibtex</a>
             </div>
         </div>
-        <div class="publication row clearfix">
+        <div class="publication row">
             <div class="row-media" style="background-image: url(files/dmcontrol-gb.png);"></div>
             <div class="row-text">
                 <a class="bold" href="https://github.com/nicklashansen/dmcontrol-generalization-benchmark">DMControl Generalization Benchmark<span class="stars">&#11088; 188</span></a><br/>
@@ -380,7 +380,7 @@
     <div>
         <h2 class="noselect">Media coverage</h2>
         I have been mentioned in various media in connection with my research. Here's a few select articles:
-        <div class="row clearfix" style="margin-top: 16px;">
+        <div class="row" style="margin-top: 16px;">
             <a href="https://blogs.nvidia.com/blog/national-robotics-week-2025#nicklas-hansen" class="press row-media" style="background-image: url(files/nvidia.png)"></a>
             <a href="https://generallyintelligent.com/podcast/2022-12-16-podcast-episode-25-nicklas-hansen" class="press row-media" style="background-image: url(files/generallyintelligent.png)"></a>
             <a href="https://bdtechtalks.com/2022/04/04/reinforcement-learning-td-mpc" class="press row-media" style="background-image: url(files/bdtalks.png)"></a>
@@ -413,7 +413,7 @@
 </div>
 <div class="footer noselect">
     <div class="footer-content">
-        &copy; 2026 Nicklas Hansen. No web trackers. Design is my own. You are welcome to fork it <a style="color: white; text-decoration: underline;" href="https://github.com/nicklashansen/nicklashansen.github.io">here</a>.
+        &copy; 2026 Nicklas Hansen. No web trackers. Design is my own. You are welcome to fork it <a href="https://github.com/nicklashansen/nicklashansen.github.io">here</a>.
     </div>
 </div>
 </body>
