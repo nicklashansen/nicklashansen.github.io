@@ -17,7 +17,7 @@ p {line-height: 1.5em;}
 .bold {font-weight: bold;}
 .italic {font-style: italic;}
 .row {display: flex; align-items: flex-start; box-sizing: border-box;}
-.row-media {flex-shrink: 0; width: 180px; height: 101px; background-position: center; background-size: contain; background-repeat: no-repeat;}
+.row-media {flex-shrink: 0; width: 200px; height: 112px; background-position: center; background-size: contain; background-repeat: no-repeat;}
 .row-text {margin-left: 16px; line-height: 1.5em; min-width: 0;}
 .row-text span {line-height: inherit;}
 .interests {display: flex; flex-wrap: wrap; gap: 16px;}
