@@ -1,5 +1,5 @@
 html {-webkit-text-size-adjust: 100%; text-size-adjust: 100%;}
-body {background-color: #fdfdfd; color: #2c3c4c; margin: 0; font-size: 15px;}
+body {background-color: #fdfdfd; color: #2c3c4c; margin: 0; font-size: 15px; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased;}
 h1 {margin-bottom: 32px; font-size: 2.4em;}
 h2 {margin-top: 48px; font-size: 1.6em;}
 h1, h2 {color: #345;}
