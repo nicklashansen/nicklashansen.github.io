@@ -29,6 +29,13 @@ p {line-height: 1.5em;}
 .publication.highlight {background-color: #f7efd4; width: 100%; border-radius: 6px;}
 .publication.highlight:hover {background-color: #f3e9c8;}
 .press {width: 100px; height: 80px; margin-right: 12px; background-size: cover;}
+.sticky-nav {position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(253,253,253,0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #e0e0e0; transform: translateY(-100%); transition: transform 0.3s ease; font-size: 14px;}
+.sticky-nav.visible {transform: translateY(0);}
+.sticky-nav-content {max-width: 860px; margin: auto; padding: 10px 16px; display: flex; align-items: center; justify-content: space-between;}
+.sticky-nav-name {color: #345; font-size: 16px;}
+.sticky-nav-links {display: flex; gap: 16px;}
+.sticky-nav-links a {color: #2471a3; text-decoration: none; transition: color 0.2s;}
+.sticky-nav-links a:hover {color: #f09228;}
 .footer {border-top: #e0e0e0 1px solid; width: 100%; max-width: 860px; margin: auto;}
 .footer-content {color: #999; font-size: 12px; padding: 12px 0; max-width: 860px; margin: auto;}
 .footer-content a {color: #999 !important; text-decoration: underline; transition: color 0.2s;}
@@ -53,4 +60,6 @@ p {line-height: 1.5em;}
 
 @media only screen and (max-width: 600px) {
     .press {width: 80px; height: 64px; margin-right: 8px;}
+    .sticky-nav-links {gap: 12px;}
+    .sticky-nav-name {font-size: 14px;}
 }

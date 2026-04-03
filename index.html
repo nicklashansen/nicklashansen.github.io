@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-    <link rel="stylesheet" href="style.css?v=1.5">
+    <link rel="stylesheet" href="style.css?v=1.6">
     <script>
         function showBooks() {
             var div = document.getElementById("hidden");
@@ -32,9 +32,28 @@
             var div = document.getElementById("contact");
             div.scrollIntoView({behavior: "smooth", block: "start"});
         }
+        document.addEventListener("DOMContentLoaded", function() {
+            var header = document.querySelector(".header");
+            var nav = document.getElementById("sticky-nav");
+            var observer = new IntersectionObserver(function(entries) {
+                nav.classList.toggle("visible", !entries[0].isIntersecting);
+            }, {threshold: 0});
+            observer.observe(header);
+        });
     </script>
 </head>
 <body>
+<nav class="sticky-nav noselect" id="sticky-nav">
+    <div class="sticky-nav-content">
+        <span class="sticky-nav-name bold">Nicklas Hansen</span>
+        <div class="sticky-nav-links">
+            <a href="javascript:void(0);" onclick="scrollToContact()">Email</a>
+            <a href="https://scholar.google.com/citations?hl=en&user=8wGH7wsAAAAJ&view_op=list_works&sortby=pubdate">Scholar</a>
+            <a href="https://github.com/nicklashansen">GitHub</a>
+            <a href="files/cv.pdf">CV</a>
+        </div>
+    </div>
+</nav>
 <div class="header noselect">
     <div class="header-div content row">
         <div class="header-profile-picture"></div>
