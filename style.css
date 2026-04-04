@@ -42,7 +42,8 @@ p {line-height: 1.5em;}
 .footer-content {color: #999; font-size: 12px; padding: 12px 0; max-width: 860px; margin: auto;}
 .footer-content a {color: #999 !important; text-decoration: underline; transition: color 0.2s;}
 .footer-content a:hover {color: #666 !important;}
-.stars {font-size: 10px; display: inline-block; margin-left: 6px; color: #666;}
+.stars {font-size: 11px; display: inline-flex; align-items: center; gap: 4px; margin-left: 8px; color: #666; background-color: #f0f0f0; border: 1px solid #d0d7de; border-radius: 12px; padding: 1px 8px; vertical-align: middle; line-height: 1.5;}
+.gh-icon {width: 13px; height: 13px; flex-shrink: 0;}
 
 @media only screen and (max-width: 1150px) {
     .header-div {flex-direction: column; align-items: center; text-align: center;}
