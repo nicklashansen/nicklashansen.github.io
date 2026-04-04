@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-    <link rel="stylesheet" href="style.css?v=1.6">
+    <link rel="stylesheet" href="style.css?v=1.7">
     <script>
         function showBooks() {
             var div = document.getElementById("hidden");
@@ -45,7 +45,7 @@
 <body>
 <nav class="sticky-nav noselect" id="sticky-nav">
     <div class="sticky-nav-content">
-        <span class="sticky-nav-name bold">Nicklas Hansen</span>
+        <a class="sticky-nav-name bold" href="javascript:void(0);" onclick="window.scrollTo({top:0,behavior:'smooth'})">Nicklas Hansen</a>
         <div class="sticky-nav-links">
             <a href="javascript:void(0);" onclick="scrollToContact()">Email</a>
             <a href="https://scholar.google.com/citations?hl=en&user=8wGH7wsAAAAJ&view_op=list_works&sortby=pubdate">Scholar</a>
@@ -65,12 +65,17 @@
                 PhD candidate, UC San Diego
             </div>
             <div class="header-links">
-                <a class="btn" href="javascript:void(0);" onclick="scrollToContact()">Email</a> /
-                <a class="btn" href="https://scholar.google.com/citations?hl=en&user=8wGH7wsAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> /
-                <a class="btn" href="https://github.com/nicklashansen">GitHub</a> /
-                <a class="btn" href="https://bsky.app/profile/ncklashansen.bsky.social">Bluesky</a> /
-                <a class="btn" href="https://www.linkedin.com/in/ncklas">LinkedIn</a> /
-                <a class="btn" href="files/cv.pdf">CV</a>
+                <span class="header-links-row">
+                    <a class="btn" href="javascript:void(0);" onclick="scrollToContact()">Email</a> /
+                    <a class="btn" href="https://scholar.google.com/citations?hl=en&user=8wGH7wsAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> /
+                    <a class="btn" href="https://github.com/nicklashansen">GitHub</a>
+                </span>
+                <span class="header-links-separator"> / </span>
+                <span class="header-links-row">
+                    <a class="btn" href="https://bsky.app/profile/ncklashansen.bsky.social">Bluesky</a> /
+                    <a class="btn" href="https://www.linkedin.com/in/ncklas">LinkedIn</a> /
+                    <a class="btn" href="files/cv.pdf">CV</a>
+                </span>
             </div>
         </div>
     </div>
