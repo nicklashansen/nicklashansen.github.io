@@ -1,4 +1,4 @@
-@article{xu2022xtra,
+@inproceedings{xu2022xtra,
   title={On the Feasibility of Cross-Task Transfer with Model-Based Reinforcement Learning},
   author={Yifan Xu and Nicklas Hansen and Zirui Wang and Yung-Chieh Chan and Hao Su and Zhuowen Tu},
   booktitle={International Conference on Learning Representations (ICLR)},

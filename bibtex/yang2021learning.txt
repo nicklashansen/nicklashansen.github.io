@@ -1,5 +1,4 @@
-@inproceedings{
-	yang2022learning,
+@inproceedings{yang2021learning,
 	title={Learning Vision-Guided Quadrupedal Locomotion End-to-End with Cross-Modal Transformers},
 	author={Ruihan Yang and Minghao Zhang and Nicklas Hansen and Huazhe Xu and Xiaolong Wang},
 	booktitle={International Conference on Learning Representations},
