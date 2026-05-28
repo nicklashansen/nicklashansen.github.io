@@ -1,0 +1,6 @@
+@article{fu2026tcwm,
+  title   = {Back to Parsimonious Latents: Learning Task-Centric World Models from Visual Foundations},
+  author  = {Fu, Minghao and Feng, Fan and Hansen, Nicklas and Huang, Biwei},
+  journal = {arXiv preprint arXiv:2605.25620},
+  year    = {2026}
+}
