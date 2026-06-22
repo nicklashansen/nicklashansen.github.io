@@ -1,6 +1,6 @@
-@inproceedings{hansen2025insertion,
+@inproceedings{hansen2026insertion,
 	title={Generalizable Robotic Insertion with World Models}, 
 	author={Nicklas Hansen and Iretiayo Akinola and Yijie Guo and Jie Xu and Bingjie Tang and Hao Su and Xiaolong Wang and Abhishek Gupta and Dieter Fox and Yashraj Narang},
-	booktitle={Workshop on Out-of-Distribution Generalization in Robotics at RSS},
-	year={2025}
+	booktitle={International Conference on Intelligent Robots and Systems (IROS)},
+	year={2026}
 }
