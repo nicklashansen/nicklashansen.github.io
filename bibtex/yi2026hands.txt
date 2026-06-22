@@ -1,0 +1,6 @@
+@article{yi2026hands,
+  title   = {Generating Robot Hands from Human Demonstrations},
+  author  = {Yi, Sha and Hansen, Nicklas and Bai, Xueqian and Sferrazza, Carmelo and Tolley, Michael T. and Wang, Xiaolong},
+  journal = {arXiv preprint arXiv:2606.20549},
+  year    = {2026}
+}

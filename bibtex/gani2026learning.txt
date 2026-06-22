@@ -1,0 +1,6 @@
+@inproceedings{gani2026learning,
+	title={Learning Reasoning-Guided Robot Policies via Task-Aligned Simulated Futures},
+	author={Hanan Gani and Tejal Kulkarni and Madhoolika Chodavarapu and Nicklas Hansen and Manmohan Chandraker},
+	booktitle={European Conference on Computer Vision (ECCV)},
+	year={2026}
+}
