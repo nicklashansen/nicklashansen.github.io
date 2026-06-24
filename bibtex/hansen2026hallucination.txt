@@ -1,5 +1,6 @@
-@misc{Hansen2026Hallucination,
+@misc{hansen2026hallucination,
 	title={Hallucination in World Models is Predictable and Preventable},
 	author={Nicklas Hansen and Xiaolong Wang},
-	year={2026}
+	year={2026},
+	url={https://www.nicklashansen.com/mmbench2/}
 }
