@@ -24,10 +24,13 @@ p {line-height: 1.5em;}
 .interest {width: 268px; max-width: 100%;}
 .video-container {width: 100%; max-width: 268px; margin: auto; border-radius: 6px; overflow: hidden;}
 .interest-text {max-width: 268px; margin-top: 8px;}
-.publication {margin-bottom: 36px; padding: 8px; border-radius: 6px; transition: background-color 0.2s;}
-.publication:hover {background-color: #f5f7f9;}
-.publication.highlight {background-color: #f7efd4; width: 100%; border-radius: 6px;}
-.publication.highlight:hover {background-color: #f3e9c8;}
+.publication {margin-bottom: 36px; padding: 8px; border-radius: 6px;}
+.publication.highlight {background: linear-gradient(135deg, #fde8d5, #fbddc2); width: 100%; border-radius: 10px;}
+.publication.highlight-mmbench {background: linear-gradient(135deg, #f1e9fb, #e4d6f4);}
+.publication.highlight-mmbench a:not(.btn-feature) {color: #75409C;}
+.publication.highlight-mmbench a:not(.btn-feature):hover {color: #9150BE;}
+.btn-feature {background: #75409C; color: #fff; border-radius: 999px; padding: 2px 10px;}
+.btn-feature:hover {background: #9150BE; color: #fff;}
 .press {width: 100px; height: 80px; margin-right: 12px; background-size: cover;}
 .sticky-nav {position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(253,253,253,0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #e0e0e0; transform: translateY(-100%); transition: transform 0.3s ease; font-size: 14px;}
 .sticky-nav.visible {transform: translateY(0);}
