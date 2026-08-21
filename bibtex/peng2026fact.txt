@@ -1,0 +1,6 @@
+@article{peng2026fact,
+  title   = {FACT: Failure-Aware Causal Training for World-Action Models},
+  author  = {Peng, Quanquan and Liang, Yutong and Yan, Rui and Hansen, Nicklas and Wang, Xiaolong},
+  journal = {arXiv preprint arXiv:2608.10232},
+  year    = {2026}
+}
