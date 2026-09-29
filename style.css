@@ -75,3 +75,5 @@ p {line-height: 1.5em;}
     .sticky-nav-links {gap: 12px;}
     .sticky-nav-name {font-size: 14px;}
 }
+.toast {position: fixed; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); left: 50%; z-index: 200; transform: translate(-50%, 12px); background: #222; color: #fff; padding: 8px 16px; border-radius: 6px; font-size: 14px; opacity: 0; pointer-events: none; transition: opacity 0.2s ease, transform 0.2s ease; max-width: calc(100% - 32px); box-sizing: border-box; text-align: center; overflow-wrap: anywhere;}
+.toast.visible {opacity: 1; transform: translate(-50%, 0);}
