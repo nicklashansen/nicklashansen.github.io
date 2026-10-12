@@ -1,0 +1,5 @@
+Nicklas Hansen is a postdoctoral researcher at NYU Courant working with Lerrel Pinto and Yann LeCun. Nick's research spans world models, reinforcement learning, and robot learning, with the goal of developing generalist AI agents that learn from interaction. They completed their PhD at UC San Diego advised by Xiaolong Wang and Hao Su, and have also spent time at NVIDIA Research, Meta AI (FAIR), and UC Berkeley. Nick received their BS and MS degrees from the Technical University of Denmark, and is a recipient of the 2024 NVIDIA Graduate Fellowship.
+
+Webpage: www.nicklashansen.com
+
+Headshot: https://www.nicklashansen.com/files/me.png

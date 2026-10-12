@@ -1,0 +1,6 @@
+@article{mckenzie2026manifold,
+  title   = {Manifold Bandits: Bayesian Curriculum Learning over the Latent Geometry of Large Language Models},
+  author  = {McKenzie, Darrien and Hansen, Nicklas and Wang, Xiaolong},
+  journal = {arXiv preprint arXiv:2606.19750},
+  year    = {2026}
+}
