@@ -1,0 +1,6 @@
+@article{remonda2026pia,
+  title   = {Simulation Priors for Rapid Adaptation in Model-Based RL for Autonomous Racing},
+  author  = {Remonda, Adrian and Xi, Jiajun and Hansen, Nicklas and Greiff, Marcus and Lew, Thomas and Talbot, John and Subosits, John and Wang, Xiaolong},
+  journal = {arXiv preprint arXiv:2610.26757},
+  year    = {2026}
+}
