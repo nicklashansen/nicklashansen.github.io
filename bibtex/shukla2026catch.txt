@@ -1,0 +1,6 @@
+@article{shukla2026catch,
+  title   = {Catch It All!: Generalizable Dynamic Catching with a Dexterous Hand},
+  author  = {Shukla, Arth and Fay, Kehlani and Liu, Huaze and Djapri, Darin and Buynitsky, Alexiy and Hansen, Nicklas},
+  journal = {arXiv preprint arXiv:2610.39044},
+  year    = {2026}
+}
